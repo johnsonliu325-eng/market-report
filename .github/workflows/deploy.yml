@@ -1,0 +1,45 @@
+name: Build and Deploy Morning Report
+
+on:
+  schedule:
+    # UTC 时间。北京时间 = UTC + 8。
+    # 北京 08:00 = UTC 00:00；这里设两个点：北京 07:30 和 08:30，覆盖美股收盘后
+    - cron: '30 23 * * *'   # 北京 07:30
+    - cron: '30 0 * * *'    # 北京 08:30
+  workflow_dispatch:        # 允许手动点击触发
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Generate report HTML
+        run: python3 build_site.py
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
