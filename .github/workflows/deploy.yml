@@ -1,12 +1,11 @@
 name: Build and Deploy Morning Report
 
 on:
-  schedule:
-    # UTC 时间。北京时间 = UTC + 8。
-    # 北京 08:00 = UTC 00:00；这里设两个点：北京 07:30 和 08:30，覆盖美股收盘后
-    - cron: '30 23 * * *'   # 北京 07:30
-    - cron: '30 0 * * *'    # 北京 08:30
-  workflow_dispatch:        # 允许手动点击触发
+  # 定时自动刷新已关闭：网站由本地 /发布 命令更新（数据+AI内容一起），
+  # 避免云端无AI的自动刷新覆盖精选新闻/点评。
+  push:
+    branches: [main]        # 每次 /发布 推送后自动构建发布
+  workflow_dispatch:        # 也允许手动点击触发
 
 permissions:
   contents: read
