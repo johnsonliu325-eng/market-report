@@ -7,6 +7,7 @@ import sys, os, json, datetime
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "lib"))
 from cnbc import quotes, num
 from symbols import INDICES, SECTOR_ETF, FOCUS
+from gainers import top_gainers
 
 SITE_DIR = os.path.join(os.path.dirname(__file__), "site")
 
@@ -99,6 +100,42 @@ def amazon_card(q):
     )
 
 
+def fmt_cap(v):
+    """市值字符串 '38,055,975,066' -> '380.6亿' / '1.56万亿'"""
+    try:
+        n = float(str(v).replace(",", "").replace("$", ""))
+    except (ValueError, TypeError):
+        return v or "N/A"
+    if n >= 1e12:
+        return f"{n/1e12:.2f}万亿"
+    if n >= 1e8:
+        return f"{n/1e8:.0f}亿"
+    return f"{n/1e6:.0f}百万"
+
+
+def gainers_table(n=8):
+    try:
+        gs = top_gainers(n=n)
+    except Exception as e:
+        return f'<h2>Top Gainers</h2><div class="note">榜单获取失败: {str(e)[:60]}</div>'
+    if not gs:
+        return '<h2>Top Gainers</h2><div class="note">暂无数据</div>'
+    rows = []
+    for g in gs:
+        rows.append(
+            f'<tr><td class="sym">{g["symbol"]}</td><td>{g["name"]}</td>'
+            f'<td class="num" style="color:#16a34a;font-weight:600">+{g["pct"]:.2f}%</td>'
+            f'<td class="num">{g["last"]}</td><td class="num">{fmt_cap(g["marketCap"])}</td>'
+            f'<td>{g.get("sector","") or "—"}</td></tr>'
+        )
+    return (
+        '<h2>Top Gainers（大中盘涨幅榜）</h2>'
+        '<table><thead><tr><th>代码</th><th>公司</th><th>涨幅</th>'
+        '<th>现价</th><th>市值</th><th>行业</th></tr></thead>'
+        f'<tbody>{"".join(rows)}</tbody></table>'
+    )
+
+
 CSS = """
 body{font-family:-apple-system,'PingFang SC',sans-serif;max-width:1000px;margin:0 auto;
 padding:24px;background:#0f1115;color:#e6e6e6;line-height:1.5}
@@ -136,6 +173,7 @@ def main():
     body = [
         f'<h1>美股晨报 <span class="ts">{now} 北京时间</span></h1>',
         amazon_card(q),
+        gainers_table(8),
         heatmap(SECTOR_ETF, q),
         table("大盘指数", INDICES, q),
         table("板块 ETF", SECTOR_ETF, q),
