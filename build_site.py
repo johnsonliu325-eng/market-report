@@ -11,6 +11,16 @@ from gainers import top_gainers
 
 SITE_DIR = os.path.join(os.path.dirname(__file__), "site")
 CONTENT_FILE = os.path.join(os.path.dirname(__file__), "content.json")
+ASHARE_FILE = os.path.join(os.path.dirname(__file__), "ashare_data.json")
+
+
+def load_ashare():
+    """读取本地生成的 A 股数据（akshare 云端拉不到，必须本地生成后推送）。"""
+    try:
+        with open(ASHARE_FILE, encoding="utf-8") as f:
+            return json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError):
+        return {}
 
 
 def load_content():
@@ -175,6 +185,64 @@ def amazon_commentary(text):
     return f'<h2>Amazon 追踪 · 观点</h2><div class="commentary">{paras}</div>'
 
 
+def ashare_section(a, commentary=""):
+    """A股板块：指数 + 行业ETF + 思源电气。a = ashare_data.json 内容"""
+    if not a or not a.get("indices"):
+        return ""
+    def pctspan(p):
+        # A股惯例：涨红跌绿（与美股相反）
+        c = "#dc2626" if p > 0 else ("#16a34a" if p < 0 else "#888")
+        return f'<span style="color:{c};font-weight:600">{p:+.2f}%</span>'
+
+    # 指数表
+    irows = "".join(
+        f'<tr><td>{i["name"]}</td><td class="num">{i["last"]:.2f}</td>'
+        f'<td class="num">{pctspan(i["pct"])}</td></tr>' for i in a["indices"])
+    idx = ('<table><thead><tr><th>指数</th><th>点位</th><th>涨跌%</th></tr></thead>'
+           f'<tbody>{irows}</tbody></table>')
+
+    # 行业ETF表
+    erows = "".join(
+        f'<tr><td class="sym">{e["code"]}</td><td>{e["label"]}</td>'
+        f'<td class="num">{e["last"]:.3f}</td><td class="num">{pctspan(e["pct"])}</td></tr>'
+        for e in a.get("etfs", []))
+    etf = ('<table><thead><tr><th>代码</th><th>行业</th><th>净值</th><th>涨跌%</th></tr></thead>'
+           f'<tbody>{erows}</tbody></table>') if erows else ""
+
+    # 思源电气卡片
+    f = a.get("focus")
+    focus_html = ""
+    if f:
+        pos = None
+        if f.get("yr_high") and f.get("yr_low") and f["yr_high"] > f["yr_low"]:
+            pos = (f["last"] - f["yr_low"]) / (f["yr_high"] - f["yr_low"]) * 100
+        stats = [("总市值", f'{f.get("mktcap",0)/1e8:.0f}亿' if f.get("mktcap") else "N/A"),
+                 ("PE(TTM)", f.get("pe_ttm")), ("PB", f.get("pb")),
+                 ("PS", f.get("ps")), ("PEG", f.get("peg")), ("换手率", f'{f.get("turnover")}%')]
+        grid = "".join(f'<div class="stat"><div class="sl">{k}</div>'
+                       f'<div class="sv">{round(v,2) if isinstance(v,float) else v}</div></div>'
+                       for k, v in stats)
+        pctc = "#dc2626" if f["pct"] > 0 else "#16a34a"
+        posbar = ""
+        if pos is not None:
+            posbar = (f'<div class="posbar"><div class="posfill" style="left:{pos:.0f}%"></div></div>'
+                      f'<div class="poslbl"><span>{f["yr_low"]:.1f}</span>'
+                      f'<span>52周区间 {pos:.0f}%</span><span>{f["yr_high"]:.1f}</span></div>')
+        comm = f'<div class="commentary" style="margin-top:14px">{"".join(f"<p>{l}</p>" for l in commentary.split(chr(10)) if l.strip())}</div>' if commentary else ""
+        focus_html = (
+            f'<h3 style="margin-top:20px">重点个股 · 思源电气 ({f["code"]})</h3>'
+            f'<div class="amzn"><div class="amzntop">'
+            f'<span class="price">{f["last"]:.2f}</span>'
+            f'<span class="chg" style="color:{pctc}">{f["pct"]:+.2f}%</span>'
+            f'<span class="mktstatus">{f.get("date","")}</span></div>'
+            f'{posbar}<div class="statgrid">{grid}</div>{comm}</div>')
+
+    return (f'<div class="ashare-block"><h2>🇨🇳 A股</h2>'
+            f'<h3>关键指数</h3>{idx}'
+            f'{"<h3>行业 ETF</h3>" + etf if etf else ""}'
+            f'{focus_html}</div>')
+
+
 CSS = """
 body{font-family:-apple-system,'PingFang SC',sans-serif;max-width:1000px;margin:0 auto;
 padding:24px;background:#0f1115;color:#e6e6e6;line-height:1.5}
@@ -218,24 +286,27 @@ def main():
     q = quotes(all_syms)
     now = bj_now().strftime("%Y-%m-%d %H:%M")
     c = load_content()
+    a = load_ashare()
     c_time = c.get("generated_at", "")
     updated = f'<div class="updated">AI 内容更新于 {c_time}</div>' if c_time else ""
 
     body = [
-        f'<h1>美股晨报 <span class="ts">{now} 北京时间</span></h1>',
+        f'<h1>每日晨报 <span class="ts">{now} 北京时间</span></h1>',
         updated,
         news_section(c.get("news")),
+        '<h2 style="border-top:1px solid #2a2f3a;padding-top:20px">🇺🇸 美股</h2>',
         amazon_card(q),
         amazon_commentary(c.get("amazon_commentary")),
         gainers_table(8, intros=c.get("gainer_intros")),
         heatmap(SECTOR_ETF, q),
         table("大盘指数", INDICES, q),
         table("板块 ETF", SECTOR_ETF, q),
-        '<div class="note">行情数据来源 CNBC / Nasdaq，隔夜收盘。新闻精选、公司简介、Amazon 观点由 Claude 在终端生成后同步。</div>',
+        ashare_section(a, commentary=c.get("siyuan_commentary", "")),
+        '<div class="note">美股行情 CNBC/Nasdaq，A股行情 akshare。新闻精选、公司简介与个股观点由 Claude 在终端生成后同步。</div>',
     ]
     html = (f'<!DOCTYPE html><html lang="zh"><head><meta charset="utf-8">'
             f'<meta name="viewport" content="width=device-width,initial-scale=1">'
-            f'<title>美股晨报 {now}</title><style>{CSS}</style></head>'
+            f'<title>每日晨报 {now}</title><style>{CSS}</style></head>'
             f'<body>{"".join(body)}</body></html>')
 
     os.makedirs(SITE_DIR, exist_ok=True)
