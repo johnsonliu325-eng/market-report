@@ -10,6 +10,17 @@ from symbols import INDICES, SECTOR_ETF, FOCUS
 from gainers import top_gainers
 
 SITE_DIR = os.path.join(os.path.dirname(__file__), "site")
+CONTENT_FILE = os.path.join(os.path.dirname(__file__), "content.json")
+
+
+def load_content():
+    """读取 Claude 在终端生成的 AI 内容（新闻精选/公司简介/Amazon点评）。
+    没有文件时返回空 dict，网站照常出纯数据版。"""
+    try:
+        with open(CONTENT_FILE, encoding="utf-8") as f:
+            return json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError):
+        return {}
 
 
 def bj_now():
@@ -113,7 +124,8 @@ def fmt_cap(v):
     return f"{n/1e6:.0f}百万"
 
 
-def gainers_table(n=8):
+def gainers_table(n=8, intros=None):
+    intros = intros or {}
     try:
         gs = top_gainers(n=n)
     except Exception as e:
@@ -122,8 +134,11 @@ def gainers_table(n=8):
         return '<h2>Top Gainers</h2><div class="note">暂无数据</div>'
     rows = []
     for g in gs:
+        intro = intros.get(g["symbol"], "")
+        intro_html = f'<div class="intro">{intro}</div>' if intro else ""
         rows.append(
-            f'<tr><td class="sym">{g["symbol"]}</td><td>{g["name"]}</td>'
+            f'<tr><td class="sym">{g["symbol"]}</td>'
+            f'<td>{g["name"]}{intro_html}</td>'
             f'<td class="num" style="color:#16a34a;font-weight:600">+{g["pct"]:.2f}%</td>'
             f'<td class="num">{g["last"]}</td><td class="num">{fmt_cap(g["marketCap"])}</td>'
             f'<td>{g.get("sector","") or "—"}</td></tr>'
@@ -134,6 +149,30 @@ def gainers_table(n=8):
         '<th>现价</th><th>市值</th><th>行业</th></tr></thead>'
         f'<tbody>{"".join(rows)}</tbody></table>'
     )
+
+
+def news_section(news):
+    """精选新闻: news = [{title, source, url, note}]"""
+    if not news:
+        return ""
+    items = []
+    for it in news:
+        note = f'<div class="intro">{it["note"]}</div>' if it.get("note") else ""
+        src = f' · <span class="nsrc">{it["source"]}</span>' if it.get("source") else ""
+        link = it.get("url", "#")
+        items.append(
+            f'<div class="newsitem"><a href="{link}" target="_blank">{it.get("title","")}</a>'
+            f'{src}{note}</div>'
+        )
+    return f'<h2>精选新闻</h2><div class="newslist">{"".join(items)}</div>'
+
+
+def amazon_commentary(text):
+    """Amazon 追踪点评（Claude 写的 markdown-ish 文本，简单换行处理）"""
+    if not text:
+        return ""
+    paras = "".join(f"<p>{line}</p>" for line in text.split("\n") if line.strip())
+    return f'<h2>Amazon 追踪 · 观点</h2><div class="commentary">{paras}</div>'
 
 
 CSS = """
@@ -162,6 +201,15 @@ tr:hover{background:#161a22}
 .stat{background:#0f1115;padding:10px;border-radius:6px}
 .sl{font-size:11px;color:#6b7280}.sv{font-size:15px;font-weight:600;margin-top:2px}
 .note{background:#1e293b;border-left:3px solid #60a5fa;padding:10px 14px;border-radius:4px;font-size:13px;color:#94a3b8;margin-top:16px}
+.intro{font-size:12px;color:#8b96a5;margin-top:3px;line-height:1.4}
+.newslist{margin-top:8px}
+.newsitem{padding:10px 0;border-bottom:1px solid #1a1e26}
+.newsitem a{color:#e6e6e6;text-decoration:none;font-weight:600;font-size:15px}
+.newsitem a:hover{color:#60a5fa}
+.nsrc{color:#6b7280;font-size:12px}
+.commentary{background:#161a22;border-radius:10px;padding:16px 18px;margin-top:8px}
+.commentary p{margin:8px 0;font-size:14px;color:#cbd5e1}
+.updated{color:#6b7280;font-size:12px;margin-top:4px}
 """
 
 
@@ -169,15 +217,21 @@ def main():
     all_syms = [s for s, _ in INDICES + SECTOR_ETF + FOCUS]
     q = quotes(all_syms)
     now = bj_now().strftime("%Y-%m-%d %H:%M")
+    c = load_content()
+    c_time = c.get("generated_at", "")
+    updated = f'<div class="updated">AI 内容更新于 {c_time}</div>' if c_time else ""
 
     body = [
         f'<h1>美股晨报 <span class="ts">{now} 北京时间</span></h1>',
+        updated,
+        news_section(c.get("news")),
         amazon_card(q),
-        gainers_table(8),
+        amazon_commentary(c.get("amazon_commentary")),
+        gainers_table(8, intros=c.get("gainer_intros")),
         heatmap(SECTOR_ETF, q),
         table("大盘指数", INDICES, q),
         table("板块 ETF", SECTOR_ETF, q),
-        '<div class="note">数据来源 CNBC，隔夜收盘行情，每日自动更新。新闻与深度解读请在 Claude Code 运行 <b>/晨报</b>。</div>',
+        '<div class="note">行情数据来源 CNBC / Nasdaq，隔夜收盘。新闻精选、公司简介、Amazon 观点由 Claude 在终端生成后同步。</div>',
     ]
     html = (f'<!DOCTYPE html><html lang="zh"><head><meta charset="utf-8">'
             f'<meta name="viewport" content="width=device-width,initial-scale=1">'

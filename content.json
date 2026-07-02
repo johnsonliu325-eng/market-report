@@ -1,0 +1,40 @@
+{
+  "generated_at": "2026-07-02 09:35 北京时间",
+  "news": [
+    {
+      "title": "Meta 计划建 AI 云业务，出售多余算力，股价大涨超10%",
+      "source": "CNBC / Bloomberg",
+      "url": "https://www.cnbc.com/2026/07/01/2026-laggards-shine-in-mixed-market-that-kicked-off-q3.html",
+      "note": "全天最大新闻。Meta 要把自建数据中心的多余 AI 算力对外出租，等于切入 AWS/Azure 的云生意，单日市值+1790亿美元。对 Amazon 值得警惕：云算力供给端多了个重量级玩家，需跟踪是否影响 AWS 定价与份额叙事。"
+    },
+    {
+      "title": "Reddit 大涨14%：AI 数据授权 + 财报炸裂（营收+69%）",
+      "source": "MarketBeat / Yahoo Finance",
+      "url": "https://www.marketbeat.com/instant-alerts/reddit-nyserddt-shares-up-8-should-you-buy-2026-07-01/",
+      "note": "Q1 EPS $1.01 远超预期 $0.62，营收 $663M（+69% YoY）。核心逻辑是向 Google、OpenAI 收取 AI 训练数据授权费——AI 时代『内容即资产』的典型案例。"
+    },
+    {
+      "title": "Coinbase 冲高近9%：多资产『超级 App』愿景获多家看多",
+      "source": "StocksToTrade",
+      "url": "https://stockstotrade.com/news/coinbase-global-inc-coin-news-2026_07_01/",
+      "note": "Coinbase 推进从交易所向综合金融超级 App 转型，分析师上调目标价。加密板块整体情绪回暖，与 Robinhood(+8.3%) 同步走强。"
+    },
+    {
+      "title": "开局 Q3：市场分化，落后板块补涨，科技内部两极",
+      "source": "CNBC / Motley Fool",
+      "url": "https://www.fool.com/investing/2026/07/01/market-indexes-start-july-with-mixed-tech-message/",
+      "note": "今日典型特征是资金从半导体（费半-6.3%）切向软件/互联网平台和金融。上半年道指+8.9%创2021年来最佳，市场在高位做结构再平衡。"
+    }
+  ],
+  "gainer_intros": {
+    "RDDT": "社交社区平台。今日+14%：财报营收增69%、EPS大超预期，叠加向Google/OpenAI收取AI数据授权费的想象空间。",
+    "GH": "癌症早筛与液体活检公司。今日+14%，生物科技板块个股催化驱动。",
+    "APP": "移动广告与游戏变现平台AppLovin。今日+9.6%，AI广告推荐引擎持续兑现，是本轮AI应用层的强势股。",
+    "COIN": "美国最大加密交易所。今日+8.9%，推进多资产『超级App』转型获分析师看多。",
+    "META": "社交与AI巨头。今日+8.8%：宣布建AI云业务对外出售算力，切入云计算赛道，市值单日增约1790亿美元。",
+    "GIS": "食品消费龙头General Mills（哈根达斯、Cheerios）。今日+8.5%，防御性消费股，或受财报/评级驱动。",
+    "HOOD": "互联网券商Robinhood。今日+8.3%，受益加密与交易情绪回暖，与Coinbase同步。",
+    "PDD": "拼多多（含Temu）。今日+8.2%，中概整体走强（KWEB+2.7%），估值修复。"
+  },
+  "amazon_commentary": "【今日表现】AMZN 收 241.70，+1.41%，在纳指走弱、费半-6.3%的背景下逆势上涨，明显跑赢科技板块（XLK -2.6%）。这是昨夜『资金从半导体切向软件/云/平台』主线的直接受益。\n【最大变量：Meta 入局云】今天最需要 Amazon 研究员关注的，不是 AMZN 自己涨跌，而是 Meta 宣布建 AI 云业务、出售多余算力。这在供给端给云计算市场加入一个重量级新玩家。短期是情绪，长期需评估：是否加剧 AWS 之外的算力价格竞争、是否影响市场对 AWS 增长与利润率的预期。7/30 财报前，AWS 云支出复苏（Jefferies 调研95%IT预算增长）仍是核心多头逻辑，但竞争叙事在变复杂。\n【估值】PE(TTM) 28.9、前瞻PE 28.7、PS 3.5，处52周区间55%位置。估值合理不便宜，市场未 price-in 盈利大幅加速。核心矛盾：AWS 能否在竞争加剧下守住增长与利润率预期。"
+}
