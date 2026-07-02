@@ -7,10 +7,11 @@ import json, os, datetime
 # 关注的指数（新浪名称）
 INDEX_NAMES = ["上证指数", "深证成指", "创业板指", "沪深300", "科创50", "中证500", "北证50"]
 
-# 关注的行业 ETF（关键词 -> 显示名），取每类第一个匹配的主流ETF
+# 关注的行业 ETF（关键词 -> 显示名），取每类成交额最大的主流ETF
 ETF_KEYWORDS = [
     ("电力", "电力"), ("光伏", "光伏"), ("新能源车", "新能源车"),
-    ("半导体", "半导体"), ("证券", "证券"), ("银行", "银行"),
+    ("半导体", "半导体"), ("芯片", "芯片"), ("机器人", "机器人"),
+    ("创新药", "创新药"), ("证券", "证券"), ("银行", "银行"),
     ("医药", "医药"), ("军工", "军工"), ("人工智能", "AI/人工智能"),
 ]
 
@@ -36,6 +37,10 @@ def get_etfs(ak):
     out, used = [], set()
     for kw, label in ETF_KEYWORDS:
         hit = df[df["名称"].str.contains(kw, na=False)]
+        if hit.empty:
+            continue
+        # 选成交额最大的主流ETF
+        hit = hit.sort_values("成交额", ascending=False)
         for _, r in hit.iterrows():
             code = r["代码"]
             if code in used:

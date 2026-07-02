@@ -161,7 +161,7 @@ def gainers_table(n=8, intros=None):
     )
 
 
-def news_section(news):
+def news_section(news, title="精选新闻"):
     """精选新闻: news = [{title, source, url, note}]"""
     if not news:
         return ""
@@ -174,7 +174,7 @@ def news_section(news):
             f'<div class="newsitem"><a href="{link}" target="_blank">{it.get("title","")}</a>'
             f'{src}{note}</div>'
         )
-    return f'<h2>精选新闻</h2><div class="newslist">{"".join(items)}</div>'
+    return f'<h2>{title}</h2><div class="newslist">{"".join(items)}</div>'
 
 
 def amazon_commentary(text):
@@ -185,7 +185,7 @@ def amazon_commentary(text):
     return f'<h2>Amazon 追踪 · 观点</h2><div class="commentary">{paras}</div>'
 
 
-def ashare_section(a, commentary=""):
+def ashare_section(a, commentary="", with_header=True):
     """A股板块：指数 + 行业ETF + 思源电气。a = ashare_data.json 内容"""
     if not a or not a.get("indices"):
         return ""
@@ -237,7 +237,8 @@ def ashare_section(a, commentary=""):
             f'<span class="mktstatus">{f.get("date","")}</span></div>'
             f'{posbar}<div class="statgrid">{grid}</div>{comm}</div>')
 
-    return (f'<div class="ashare-block"><h2>🇨🇳 A股</h2>'
+    hdr = '<h2>🇨🇳 A股</h2>' if with_header else ''
+    return (f'<div class="ashare-block">{hdr}'
             f'<h3>关键指数</h3>{idx}'
             f'{"<h3>行业 ETF</h3>" + etf if etf else ""}'
             f'{focus_html}</div>')
@@ -293,15 +294,17 @@ def main():
     body = [
         f'<h1>每日晨报 <span class="ts">{now} 北京时间</span></h1>',
         updated,
-        news_section(c.get("news")),
         '<h2 style="border-top:1px solid #2a2f3a;padding-top:20px">🇺🇸 美股</h2>',
+        news_section(c.get("news"), title="美股精选新闻"),
         amazon_card(q),
         amazon_commentary(c.get("amazon_commentary")),
         gainers_table(8, intros=c.get("gainer_intros")),
         heatmap(SECTOR_ETF, q),
         table("大盘指数", INDICES, q),
         table("板块 ETF", SECTOR_ETF, q),
-        ashare_section(a, commentary=c.get("siyuan_commentary", "")),
+        '<h2 style="border-top:1px solid #2a2f3a;padding-top:20px">🇨🇳 A股</h2>',
+        news_section(c.get("ashare_news"), title="A股精选新闻"),
+        ashare_section(a, commentary=c.get("siyuan_commentary", ""), with_header=False),
         '<div class="note">美股行情 CNBC/Nasdaq，A股行情 akshare。新闻精选、公司简介与个股观点由 Claude 在终端生成后同步。</div>',
     ]
     html = (f'<!DOCTYPE html><html lang="zh"><head><meta charset="utf-8">'
