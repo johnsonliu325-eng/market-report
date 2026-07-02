@@ -185,6 +185,37 @@ def amazon_commentary(text):
     return f'<h2>Amazon 追踪 · 观点</h2><div class="commentary">{paras}</div>'
 
 
+# 云与大科技同业（对照 Amazon，非严格云业务对标，仅作参照系）
+PEERS = [
+    ("AMZN", "Amazon"), ("MSFT", "微软"), ("GOOGL", "谷歌"),
+    ("META", "Meta"), ("NVDA", "英伟达"), ("ORCL", "甲骨文"),
+]
+
+
+def peers_table():
+    q = quotes([s for s, _ in PEERS])
+    rows = []
+    for sym, cn in PEERS:
+        d = q.get(sym, {})
+        p = num(d, "change_pct")
+        hi = "font-weight:700;background:#161a22" if sym == "AMZN" else ""
+        rows.append(
+            f'<tr style="{hi}"><td class="sym">{sym}</td><td>{cn}</td>'
+            f'<td class="num">{d.get("last","N/A")}</td>'
+            f'<td class="num">{cell_pct(d)}</td>'
+            f'<td class="num">{d.get("mktcapView","N/A")}</td>'
+            f'<td class="num">{d.get("pe","N/A")}</td>'
+            f'<td class="num">{d.get("fpe","N/A")}</td></tr>'
+        )
+    return (
+        '<h2>云与大科技同业（对照参照）</h2>'
+        '<table><thead><tr><th>代码</th><th>公司</th><th>现价</th>'
+        '<th>涨跌%</th><th>市值</th><th>PE</th><th>前瞻PE</th></tr></thead>'
+        f'<tbody>{"".join(rows)}</tbody></table>'
+        '<div class="intro" style="margin-top:6px">注：并非严格云业务对标，仅作横向盘感参照。Amazon 高亮为基准。</div>'
+    )
+
+
 def ashare_section(a, commentary="", with_header=True):
     """A股板块：指数 + 行业ETF + 思源电气。a = ashare_data.json 内容"""
     if not a or not a.get("indices"):
@@ -298,6 +329,7 @@ def main():
         news_section(c.get("news"), title="美股精选新闻"),
         amazon_card(q),
         amazon_commentary(c.get("amazon_commentary")),
+        peers_table(),
         gainers_table(8, intros=c.get("gainer_intros")),
         heatmap(SECTOR_ETF, q),
         table("大盘指数", INDICES, q),
