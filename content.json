@@ -1,61 +1,53 @@
 {
-  "generated_at": "2026-07-02 09:35 北京时间",
+  "generated_at": "2026-07-03 10:05 北京时间",
   "news": [
     {
-      "title": "Meta 计划建 AI 云业务，出售多余算力，股价大涨超10%",
-      "source": "CNBC / Bloomberg",
-      "url": "https://www.cnbc.com/2026/07/01/2026-laggards-shine-in-mixed-market-that-kicked-off-q3.html",
-      "note": "全天最大新闻。Meta 要把自建数据中心的多余 AI 算力对外出租，等于切入 AWS/Azure 的云生意，单日市值+1790亿美元。对 Amazon 值得警惕：云算力供给端多了个重量级玩家，需跟踪是否影响 AWS 定价与份额叙事。"
+      "title": "美股板块大切换：资金杀半导体、抢医疗防御",
+      "source": "Schwab / Morningstar",
+      "url": "https://www.schwab.com/learn/story/weekly-traders-outlook",
+      "note": "费半SOX两天累计-12%（部分受韩国KOSPI隔夜-7.89%拖累），资金轮向医疗/公用/黄金。VIX不涨、道指还涨，性质是获利了结+防御轮动而非risk-off恐慌，成长/价值明显劈叉。"
     },
     {
-      "title": "Reddit 大涨14%：AI 数据授权 + 财报炸裂（营收+69%）",
-      "source": "MarketBeat / Yahoo Finance",
-      "url": "https://www.marketbeat.com/instant-alerts/reddit-nyserddt-shares-up-8-should-you-buy-2026-07-01/",
-      "note": "Q1 EPS $1.01 远超预期 $0.62，营收 $663M（+69% YoY）。核心逻辑是向 Google、OpenAI 收取 AI 训练数据授权费——AI 时代『内容即资产』的典型案例。"
+      "title": "Moderna(MRNA)大涨约10%：FDA顾问委一致推荐流感疫苗 + CAR-T管线",
+      "source": "top1markets / Timothy Sykes",
+      "url": "https://www.top1markets.com/news/moderna-mrna-stock-flu-vaccine-fda-adcomm-2026",
+      "note": "FDA顾问委员会一致通过其季节性流感疫苗，叠加CAR-T管线进展，是当日医疗板块领涨的代表，印证资金向生物医药避险。"
     },
     {
-      "title": "Coinbase 冲高近9%：多资产『超级 App』愿景获多家看多",
-      "source": "StocksToTrade",
-      "url": "https://stockstotrade.com/news/coinbase-global-inc-coin-news-2026_07_01/",
-      "note": "Coinbase 推进从交易所向综合金融超级 App 转型，分析师上调目标价。加密板块整体情绪回暖，与 Robinhood(+8.3%) 同步走强。"
+      "title": "Genuine Parts(GPC)+12.9%：O'Reilly传约100亿美元收购其汽配业务",
+      "source": "AInvest / GuruFocus",
+      "url": "https://www.ainvest.com/news/genuine-parts-surges-top-turnover-rankings-reilly-10-billion-automotive-bid-2607/",
+      "note": "并购传闻驱动，成交额登顶。但AInvest提示成交量偏薄、缺乏基本面确认，警惕'牛市陷阱'，事件驱动性质需交易确认。"
     },
     {
-      "title": "开局 Q3：市场分化，落后板块补涨，科技内部两极",
-      "source": "CNBC / Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/01/market-indexes-start-july-with-mixed-tech-message/",
-      "note": "今日典型特征是资金从半导体（费半-6.3%）切向软件/互联网平台和金融。上半年道指+8.9%创2021年来最佳，市场在高位做结构再平衡。"
-    }
-  ],
-  "ashare_news": [
-    {
-      "title": "A股成长股重挫：科创50 -3.6%、创业板 -2.8%，与美股半导体共振",
-      "source": "akshare 行情",
-      "url": "https://quote.eastmoney.com/zs000001.html",
-      "note": "上证-0.7%相对抗跌，但科技成长全线杀跌。芯片ETF-4.3%、半导体设备-5.3%、创业板AI-4.1%，与隔夜美股费半-6.3%形成两地共振。半导体是今日全球最弱主线。"
+      "title": "Amazon：Prime Day销售强劲但客单价缩水，AWS成Q2财报焦点",
+      "source": "ts2.tech / MarketBeat",
+      "url": "https://ts2.tech/en/amazon-nasdaqamzn-trades-after-prime-day-jump-aws-in-focus-as-basket-sizes-shrink/",
+      "note": "量增价减需Q2财报验证零售利润率；分析师财报前重申看多。杀科技日AMZN仅微涨，凸显其'半防御'属性。"
     },
     {
-      "title": "高低切换：机器人、创新药逆势走强",
-      "source": "akshare 行情",
-      "url": "https://quote.eastmoney.com/zs000001.html",
-      "note": "在成长股普跌中，机器人ETF+1.6%、港股创新药ETF+1.6%、新能源车+1.3%逆势收红。资金在科技内部做高低切换，从拥挤的芯片/AI转向机器人（物理AI叙事）和创新药（港股主线）。"
+      "title": "A股：三大指数小幅收涨，上证站上4041点",
+      "source": "新浪财经(akshare)",
+      "url": "https://finance.sina.com.cn/",
+      "note": "上证+0.32%、深成+0.31%、创业板+0.28%，普涨但量能温和。电力设备板块中思源电气领涨。"
     },
     {
-      "title": "电力设备相对抗跌，思源电气随创业板回调",
-      "source": "akshare 行情",
-      "url": "https://quote.eastmoney.com/sz002028.html",
-      "note": "电力ETF-1.2%，跌幅小于大盘成长板块。思源电气-2.4%，主要受创业板系统性回调拖累，而非个股基本面。特高压/出海逻辑未变。"
+      "title": "思源电气(002028)+3.26%至160.5元：电力设备出海+特高压景气延续",
+      "source": "AAStocks / 公司公告",
+      "url": "https://www.sieyuan.com/",
+      "note": "当日强于大盘。留意此前副总经理小额减持（不超4万股/0.005%）及回购价格上限已被股价突破的公告，属治理层面细节。"
     }
   ],
   "gainer_intros": {
-    "RDDT": "社交社区平台。今日+14%：财报营收增69%、EPS大超预期，叠加向Google/OpenAI收取AI数据授权费的想象空间。",
-    "GH": "癌症早筛与液体活检公司。今日+14%，生物科技板块个股催化驱动。",
-    "APP": "移动广告与游戏变现平台AppLovin。今日+9.6%，AI广告推荐引擎持续兑现，是本轮AI应用层的强势股。",
-    "COIN": "美国最大加密交易所。今日+8.9%，推进多资产『超级App』转型获分析师看多。",
-    "META": "社交与AI巨头。今日+8.8%：宣布建AI云业务对外出售算力，切入云计算赛道，市值单日增约1790亿美元。",
-    "GIS": "食品消费龙头General Mills（哈根达斯、Cheerios）。今日+8.5%，防御性消费股，或受财报/评级驱动。",
-    "HOOD": "互联网券商Robinhood。今日+8.3%，受益加密与交易情绪回暖，与Coinbase同步。",
-    "PDD": "拼多多（含Temu）。今日+8.2%，中概整体走强（KWEB+2.7%），估值修复。"
+    "GPC": "Genuine Parts，全球汽车与工业零部件分销商；今日+12.9%因O'Reilly传约100亿美元收购其汽配业务，属并购传闻驱动，成交量偏薄需警惕回落。",
+    "MRNA": "Moderna，mRNA疫苗龙头；今日+10%因FDA顾问委一致推荐其流感疫苗、叠加CAR-T管线进展，是医疗避险轮动的代表。",
+    "FIG": "Figma，云端协作设计软件商；今日+9.5%，软件股在杀半导体的资金再平衡中获相对青睐。",
+    "ABVX": "Abivax，法国生物制药（ADR）；今日+9.1%，临床管线事件驱动，生物科技板块整体走强。",
+    "HONA": "Honeywell Aerospace，航空航天与工业巨头分拆实体；今日+8.7%，工业与国防主题受资金追捧。",
+    "RIVN": "Rivian，电动车新势力；今日+8.4%，可选消费/EV反弹，高波动事件驱动。",
+    "MSTR": "Strategy(原MicroStrategy)，比特币重仓公司；今日+7.9%，随加密资产情绪波动。",
+    "CACI": "CACI International，国防IT与情报服务商；今日+7.7%，国防主题延续，防御性资金流入。"
   },
-  "amazon_commentary": "【今日表现】AMZN 收 241.70，+1.41%，在纳指走弱、费半-6.3%的背景下逆势上涨，明显跑赢科技板块（XLK -2.6%）。这是昨夜『资金从半导体切向软件/云/平台』主线的直接受益。\n【最大变量：Meta 入局云】今天最需要 Amazon 研究员关注的，不是 AMZN 自己涨跌，而是 Meta 宣布建 AI 云业务、出售多余算力。这在供给端给云计算市场加入一个重量级新玩家。短期是情绪，长期需评估：是否加剧 AWS 之外的算力价格竞争、是否影响市场对 AWS 增长与利润率的预期。7/30 财报前，AWS 云支出复苏（Jefferies 调研95%IT预算增长）仍是核心多头逻辑，但竞争叙事在变复杂。\n【估值】PE(TTM) 28.9、前瞻PE 28.7、PS 3.5，处52周区间55%位置。估值合理不便宜，市场未 price-in 盈利大幅加速。核心矛盾：AWS 能否在竞争加剧下守住增长与利润率预期。",
-  "siyuan_commentary": "【今日表现】思源电气 161.81，-2.39%，随创业板/成长风格回调。当前 PE(TTM) 39.9、PB 8.0，PEG 0.65（增长消化估值较充分）。股价处52周区间高位（69.9~239.1，去年翻倍后回落），5月曾高见206元，目前较高点回撤约22%。\n【跟踪要点】公司主业为高压开关、变压器等电力设备，核心逻辑是特高压建设、电网投资与海外出海（新兴市场订单）。近期公告：10派7分红落地；有高管小额减持（不超总股本0.005%，影响有限）。后续重点跟踪：中报业绩、海外订单兑现、特高压招标节奏。估值不低，需业绩持续验证支撑。"
+  "amazon_commentary": "AMZN当日报242.67美元、微涨0.4%，在费半-5.45%、科技板块-2.71%的普杀行情里几乎持平，这本身就是一条信息：Amazon的零售+广告现金流对冲了AWS的算力股beta，让它在杀科技日表现得像'半个防御股'。52周区间196-278.56美元，当前处57%位置，不高不低。\n估值上，市值2.61万亿美元，PE(TTM)29x、前瞻PE28.7x、PS3.5x、ROE24.3%，相对自身历史不算贵（CMB口径称前瞻PE处历史2%分位），但已price in大部分乐观预期。\n真正的看点在月底Q2财报的两个数据：一是Prime Day销售虽强但'客单价缩水'的报道会不会拖累零售利润率；二是AWS增速能否守住25%+。在半导体两天跌12%、AI资本开支叙事被质疑的背景下，AWS的增速与利润率会被市场放在放大镜下看。若因板块beta被错杀出现回调，对基本面投资者反而是关注窗口，但建议等这两个数据落地再判断。",
+  "siyuan_commentary": "思源电气当日+3.26%至160.5元，明显强于A股大盘（三大指数仅+0.3%左右），当日振幅154.38-161.85元，换手0.68%量能温和。52周区间69.92-239.12元，当前160.5元处于区间中部偏上，年内弹性依然可观。逻辑主线未变：电力设备在特高压投资景气+出海订单放量的双轮驱动下，仍是电新板块里业绩能见度较高的品种。\n需要提示两条治理层面的细节：一是此前公告副总经理章良栋计划小额减持不超4万股（占总股本0.0051%），金额极小、信号意义有限；二是截至5月初公司股价已超过回购价格上限，导致回购专用账户实际累计回购0股——说明管理层设定的回购价与二级市场价存在落差，这类细节不影响基本面但值得跟踪。整体看，思源仍是跟踪电力设备出海主题的核心标的，短期强势需结合板块景气与订单兑现验证。"
 }
