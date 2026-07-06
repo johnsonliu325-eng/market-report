@@ -1,53 +1,53 @@
 {
-  "generated_at": "2026-07-03 10:05 北京时间",
+  "generated_at": "2026-07-06 09:15 北京时间",
   "news": [
     {
-      "title": "美股板块大切换：资金杀半导体、抢医疗防御",
-      "source": "Schwab / Morningstar",
-      "url": "https://www.schwab.com/learn/story/weekly-traders-outlook",
-      "note": "费半SOX两天累计-12%（部分受韩国KOSPI隔夜-7.89%拖累），资金轮向医疗/公用/黄金。VIX不涨、道指还涨，性质是获利了结+防御轮动而非risk-off恐慌，成长/价值明显劈叉。"
+      "title": "二季度标普500涨14.9%创近年最佳单季，下半年开局科技股频繁震荡",
+      "source": "Reuters / Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/investors-look-fed-clues-earnings-130003408.html",
+      "note": "半导体与科技权重股是二季度主要推手，但7月开局大盘随科技股宽幅波动，市场进入'验证盈利能否接棒估值'的窗口。"
     },
     {
-      "title": "Moderna(MRNA)大涨约10%：FDA顾问委一致推荐流感疫苗 + CAR-T管线",
-      "source": "top1markets / Timothy Sykes",
-      "url": "https://www.top1markets.com/news/moderna-mrna-stock-flu-vaccine-fda-adcomm-2026",
-      "note": "FDA顾问委员会一致通过其季节性流感疫苗，叠加CAR-T管线进展，是当日医疗板块领涨的代表，印证资金向生物医药避险。"
+      "title": "美国非农就业不及预期，加息预期降温，Fed会议纪要与Q2财报季成焦点",
+      "source": "IG / Economic Times",
+      "url": "https://www.ig.com/en/news-and-trade-ideas/weekly-market-navigator-6-jul-2026-260706",
+      "note": "就业走软压低了进一步加息的押注（本轮Fed主席Warsh坚守2%目标），银行股7月14日起打响Q2财报季，本周先看Fed纪要和PMI。"
     },
     {
-      "title": "Genuine Parts(GPC)+12.9%：O'Reilly传约100亿美元收购其汽配业务",
-      "source": "AInvest / GuruFocus",
-      "url": "https://www.ainvest.com/news/genuine-parts-surges-top-turnover-rankings-reilly-10-billion-automotive-bid-2607/",
-      "note": "并购传闻驱动，成交额登顶。但AInvest提示成交量偏薄、缺乏基本面确认，警惕'牛市陷阱'，事件驱动性质需交易确认。"
+      "title": "O'Reilly拟以100亿美元现金收购Genuine Parts汽配业务，GPC单日暴涨13%",
+      "source": "Stocktwits / Zacks",
+      "url": "https://www.zacks.com/stock/news/2947451/genuine-parts-gpc-moves-129-higher-will-this-strength-last",
+      "note": "GPC今年2月已聘JPMorgan、Guggenheim为分拆汽配业务、转型纯工业分销做准备，收购传闻点燃'价值重估'交易，但有分析师提示成交量偏薄、存在多头陷阱风险。"
     },
     {
-      "title": "Amazon：Prime Day销售强劲但客单价缩水，AWS成Q2财报焦点",
-      "source": "ts2.tech / MarketBeat",
-      "url": "https://ts2.tech/en/amazon-nasdaqamzn-trades-after-prime-day-jump-aws-in-focus-as-basket-sizes-shrink/",
-      "note": "量增价减需Q2财报验证零售利润率；分析师财报前重申看多。杀科技日AMZN仅微涨，凸显其'半防御'属性。"
+      "title": "FDA顾问委员会9-0力挺Moderna mRNA流感疫苗，叠加Science Day转型故事，MRNA一周飙升逾33%",
+      "source": "Ars Technica / Zacks",
+      "url": "https://www.zacks.com/stock/news/2947872/mrna-stock-on-the-move:-what-sparked-the-33.5-jump-in-the-past-week?",
+      "note": "顾问委员会一致推荐批准其季节性mRNA流感疫苗（此前一名官员曾试图阻挠），公司在Science Day上抛出'从疫苗公司走向多元化生物科技'的蓝图，情绪与基本面共振。"
     },
     {
-      "title": "A股：三大指数小幅收涨，上证站上4041点",
-      "source": "新浪财经(akshare)",
-      "url": "https://finance.sina.com.cn/",
-      "note": "上证+0.32%、深成+0.31%、创业板+0.28%，普涨但量能温和。电力设备板块中思源电气领涨。"
+      "title": "AWS储备实例价格上调约20%，回应云端AI算力供不应求",
+      "source": "Techi",
+      "url": "https://www.techi.com/amazon-stock-aws-price-hike-meta/",
+      "note": "7月1日起AWS对预留实例提价约20%，一边是AI算力紧俏的定价权，一边是巨额capex压力，直接指向Amazon云业务的利润率与需求弹性。"
     },
     {
-      "title": "思源电气(002028)+3.26%至160.5元：电力设备出海+特高压景气延续",
-      "source": "AAStocks / 公司公告",
+      "title": "A股缩量整理：上证守4043点微跌，电力设备板块延续高景气",
+      "source": "行情数据（akshare）",
       "url": "https://www.sieyuan.com/",
-      "note": "当日强于大盘。留意此前副总经理小额减持（不超4万股/0.005%）及回购价格上限已被股价突破的公告，属治理层面细节。"
+      "note": "沪深300、中证500小幅回落，指数进入震荡；一季度上海电气、东方电气、时代电气净利普遍双位数增长，印证电力设备/特高压产业链景气仍在。"
     }
   ],
   "gainer_intros": {
-    "GPC": "Genuine Parts，全球汽车与工业零部件分销商；今日+12.9%因O'Reilly传约100亿美元收购其汽配业务，属并购传闻驱动，成交量偏薄需警惕回落。",
-    "MRNA": "Moderna，mRNA疫苗龙头；今日+10%因FDA顾问委一致推荐其流感疫苗、叠加CAR-T管线进展，是医疗避险轮动的代表。",
-    "FIG": "Figma，云端协作设计软件商；今日+9.5%，软件股在杀半导体的资金再平衡中获相对青睐。",
-    "ABVX": "Abivax，法国生物制药（ADR）；今日+9.1%，临床管线事件驱动，生物科技板块整体走强。",
-    "HONA": "Honeywell Aerospace，航空航天与工业巨头分拆实体；今日+8.7%，工业与国防主题受资金追捧。",
-    "RIVN": "Rivian，电动车新势力；今日+8.4%，可选消费/EV反弹，高波动事件驱动。",
-    "MSTR": "Strategy(原MicroStrategy)，比特币重仓公司；今日+7.9%，随加密资产情绪波动。",
-    "CACI": "CACI International，国防IT与情报服务商；今日+7.7%，国防主题延续，防御性资金流入。"
+    "GPC": "Genuine Parts，全球汽配与工业零部件分销商（NAPA品牌），今日因O'Reilly拟100亿美元收购其汽配业务、分拆重估预期大涨。",
+    "MRNA": "Moderna，mRNA疫苗龙头，FDA顾问委员会9-0通过其流感疫苗、叠加Science Day多元化转型叙事，一周累涨逾33%。",
+    "FIG": "Figma，云端协作设计软件平台，设计工具赛道情绪回暖带动股价走强。",
+    "ABVX": "Abivax，法国生物制药公司（美股ADR），临床管线催化推动股价大幅波动。",
+    "HONA": "Honeywell Aerospace，霍尼韦尔航空航天业务，航空与国防需求支撑，今日随板块走高。",
+    "RIVN": "Rivian，美国电动皮卡/SUV制造商，交付与产能预期改善带动反弹。",
+    "MSTR": "Strategy（原MicroStrategy），持有大量比特币的'加密代理股'，随加密资产情绪回暖大涨。",
+    "CACI": "CACI International，美国国防与情报IT服务商，政府订单预期支撑股价。"
   },
-  "amazon_commentary": "AMZN当日报242.67美元、微涨0.4%，在费半-5.45%、科技板块-2.71%的普杀行情里几乎持平，这本身就是一条信息：Amazon的零售+广告现金流对冲了AWS的算力股beta，让它在杀科技日表现得像'半个防御股'。52周区间196-278.56美元，当前处57%位置，不高不低。\n估值上，市值2.61万亿美元，PE(TTM)29x、前瞻PE28.7x、PS3.5x、ROE24.3%，相对自身历史不算贵（CMB口径称前瞻PE处历史2%分位），但已price in大部分乐观预期。\n真正的看点在月底Q2财报的两个数据：一是Prime Day销售虽强但'客单价缩水'的报道会不会拖累零售利润率；二是AWS增速能否守住25%+。在半导体两天跌12%、AI资本开支叙事被质疑的背景下，AWS的增速与利润率会被市场放在放大镜下看。若因板块beta被错杀出现回调，对基本面投资者反而是关注窗口，但建议等这两个数据落地再判断。",
-  "siyuan_commentary": "思源电气当日+3.26%至160.5元，明显强于A股大盘（三大指数仅+0.3%左右），当日振幅154.38-161.85元，换手0.68%量能温和。52周区间69.92-239.12元，当前160.5元处于区间中部偏上，年内弹性依然可观。逻辑主线未变：电力设备在特高压投资景气+出海订单放量的双轮驱动下，仍是电新板块里业绩能见度较高的品种。\n需要提示两条治理层面的细节：一是此前公告副总经理章良栋计划小额减持不超4万股（占总股本0.0051%），金额极小、信号意义有限；二是截至5月初公司股价已超过回购价格上限，导致回购专用账户实际累计回购0股——说明管理层设定的回购价与二级市场价存在落差，这类细节不影响基本面但值得跟踪。整体看，思源仍是跟踪电力设备出海主题的核心标的，短期强势需结合板块景气与订单兑现验证。"
+  "amazon_commentary": "AMZN收于242.67美元（+0.40%），距5月278美元的高点仍低约12%，年内涨约9%。市场分歧的核心不在需求、而在花钱的节奏：一边是约2000亿美元的AI capex压制自由现金流，一边是AWS一季度同比增28%、跑到约1500亿美元年化收入、在手订单(backlog)达约3640亿美元的强劲基本面。7月1日AWS对预留实例提价约20%，某种程度上是给'算力供不应求'的定价权做了背书。\n估值上，卖方主流目标价约313美元，最乐观的叙事甚至给到450美元公平价，逻辑都建立在'今天重投入、明天收租金'。近期看点集中在两条线：新设立的10亿美元AWS Forward Deployed Engineering团队（把AI工程师嵌入客户、加速企业AI落地）和与Anthropic的合作+自研Trainium芯片，指向AWS想同时拿下'算力+落地服务'两端。\n对我们的跟踪而言，7月30日的财报是关键验证点——重点看AWS增速能否守住25%+、capex指引是否再上台阶、以及广告业务的利润贡献。当前位置属于'基本面不差、就等盈利兑现打消capex担忧'，回调更多是情绪与节奏问题，而非逻辑破位。",
+  "siyuan_commentary": "思源电气(002028)最新收于167.65元（+7.86%），换手率2.73%，总市值约1024亿元。把镜头拉长看，年内股价区间在69.92—239.12元之间，当前处于自高点回落后的中枢震荡区，今日的强反弹更像是超跌后的情绪修复，而非趋势级别的突破。\n基本面上，电力设备与特高压产业链景气度仍在延续——一季度上海电气、东方电气、时代电气等同业净利普遍双位数增长，行业需求(电网投资、特高压、储能、出海)并未证伪。思源的核心看点依旧是三条主线：国内电网招标的份额、海外市场(尤其是新兴市场输配电设备)的出海放量，以及储能业务的增量。需要留意的是，股价从年内高点回撤幅度不小，说明市场对高估值、高预期已有一轮消化，后续更看半年报订单与海外收入能否给出超预期数据来支撑估值修复。跟踪上建议紧盯中报披露的在手订单和海外营收占比。"
 }
