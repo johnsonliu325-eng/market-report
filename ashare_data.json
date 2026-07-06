@@ -1,121 +1,121 @@
 {
- "generated_at": "2026-07-06 09:09",
+ "generated_at": "2026-07-06 09:31",
  "indices": [
   {
    "name": "上证指数",
-   "last": 4043.3515,
-   "pct": -0.007
+   "last": 4049.9893,
+   "pct": 0.157
   },
   {
    "name": "深证成指",
-   "last": 0.0,
-   "pct": 0.0
+   "last": 15627.133,
+   "pct": 0.19
   },
   {
    "name": "创业板指",
-   "last": 0.0,
-   "pct": 0.0
+   "last": 4017.382,
+   "pct": -0.063
   },
   {
    "name": "沪深300",
-   "last": 4841.6512,
-   "pct": -0.011
+   "last": 4855.5027,
+   "pct": 0.275
   },
   {
    "name": "科创50",
-   "last": 1975.6001,
-   "pct": 0.0
+   "last": 1996.7514,
+   "pct": 1.071
   },
   {
    "name": "中证500",
-   "last": 8744.1496,
-   "pct": -0.013
+   "last": 8751.1387,
+   "pct": 0.067
   }
  ],
  "etfs": [
   {
    "label": "电力",
-   "code": "562960",
-   "name": "绿色电力ETF易方达",
-   "last": NaN,
-   "pct": NaN
+   "code": "159611",
+   "name": "电力ETF广发",
+   "last": 1.031,
+   "pct": -0.87
   },
   {
    "label": "光伏",
-   "code": "562970",
-   "name": "光伏ETF易方达",
-   "last": NaN,
-   "pct": NaN
+   "code": "515790",
+   "name": "光伏ETF华泰柏瑞",
+   "last": 0.962,
+   "pct": 0.52
   },
   {
    "label": "新能源车",
-   "code": "516660",
-   "name": "新能源车ETF华安",
-   "last": NaN,
-   "pct": NaN
+   "code": "515030",
+   "name": "新能源车ETF华夏",
+   "last": 1.863,
+   "pct": -1.01
   },
   {
    "label": "半导体",
-   "code": "589020",
-   "name": "科创半导体设备ETF鹏华",
-   "last": NaN,
-   "pct": NaN
+   "code": "159516",
+   "name": "半导体设备ETF国泰",
+   "last": 1.743,
+   "pct": 0.75
   },
   {
    "label": "芯片",
-   "code": "589350",
-   "name": "科创芯片设计ETF银华",
-   "last": NaN,
-   "pct": NaN
+   "code": "588200",
+   "name": "科创芯片ETF嘉实",
+   "last": 4.422,
+   "pct": 1.12
   },
   {
    "label": "机器人",
-   "code": "562500",
-   "name": "机器人ETF华夏",
-   "last": NaN,
-   "pct": NaN
+   "code": "159530",
+   "name": "机器人ETF易方达",
+   "last": 1.729,
+   "pct": -2.65
   },
   {
    "label": "创新药",
-   "code": "589720",
-   "name": "科创创新药ETF国泰",
-   "last": NaN,
-   "pct": NaN
+   "code": "513120",
+   "name": "港股创新药ETF广发",
+   "last": 1.165,
+   "pct": 0.34
   },
   {
    "label": "证券",
-   "code": "562870",
-   "name": "证券ETF嘉实",
-   "last": NaN,
-   "pct": NaN
+   "code": "513090",
+   "name": "香港证券ETF易方达",
+   "last": 1.876,
+   "pct": 2.18
   },
   {
    "label": "银行",
-   "code": "560670",
-   "name": "银行ETF华泰柏瑞",
-   "last": NaN,
-   "pct": NaN
+   "code": "512800",
+   "name": "银行ETF华宝",
+   "last": 0.741,
+   "pct": -0.8
   },
   {
    "label": "医药",
-   "code": "588860",
-   "name": "科创医药ETF工银",
-   "last": NaN,
-   "pct": NaN
+   "code": "512010",
+   "name": "医药ETF易方达",
+   "last": 0.359,
+   "pct": -1.1
   },
   {
    "label": "军工",
-   "code": "512810",
-   "name": "军工ETF华宝",
-   "last": NaN,
-   "pct": NaN
+   "code": "512660",
+   "name": "军工ETF国泰",
+   "last": 1.319,
+   "pct": 1.38
   },
   {
    "label": "AI/人工智能",
-   "code": "589560",
-   "name": "科创人工智能ETF汇添富",
-   "last": NaN,
-   "pct": NaN
+   "code": "159363",
+   "name": "创业板人工智能ETF华宝",
+   "last": 1.425,
+   "pct": 0.14
   }
  ],
  "focus": {
@@ -131,9 +131,10 @@
   "yr_high": 239.12,
   "yr_low": 69.92,
   "date": "2026-07-03",
-  "mktcap": 102401535536.65001,
-  "pb": null,
-  "pe_ttm": null
- },
- "focus_err": null
+  "mktcap": 131198410727.3,
+  "pe_ttm": 40.32412447,
+  "pb": 8.14007906,
+  "ps": 5.73391126,
+  "peg": 0.654879532675
+ }
 }

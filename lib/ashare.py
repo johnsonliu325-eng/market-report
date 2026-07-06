@@ -54,17 +54,21 @@ def get_etfs(ak):
 
 def get_focus(ak):
     code, name = FOCUS_STOCK
-    df = ak.stock_zh_a_hist(symbol=code, period="daily", adjust="")
-    last = df.iloc[-1]
-    recent = df.tail(250)
-    result = {
-        "code": code, "name": name,
-        "last": float(last["收盘"]), "pct": float(last["涨跌幅"]),
-        "open": float(last["开盘"]), "high": float(last["最高"]), "low": float(last["最低"]),
-        "turnover": float(last["换手率"]), "amount": float(last["成交额"]),
-        "yr_high": float(recent["最高"].max()), "yr_low": float(recent["最低"].min()),
-        "date": str(last["日期"]),
-    }
+    # 主接口：东财历史（字段全）；失败则回退新浪（sz/sh 前缀）
+    try:
+        df = ak.stock_zh_a_hist(symbol=code, period="daily", adjust="")
+        last = df.iloc[-1]
+        recent = df.tail(250)
+        result = {
+            "code": code, "name": name,
+            "last": float(last["收盘"]), "pct": float(last["涨跌幅"]),
+            "open": float(last["开盘"]), "high": float(last["最高"]), "low": float(last["最低"]),
+            "turnover": float(last["换手率"]), "amount": float(last["成交额"]),
+            "yr_high": float(recent["最高"].max()), "yr_low": float(recent["最低"].min()),
+            "date": str(last["日期"]),
+        }
+    except Exception:
+        result = _get_focus_sina(ak, code, name)
     # 估值补充（失败不影响主流程）
     try:
         v = ak.stock_value_em(symbol=code).iloc[-1]
@@ -73,8 +77,38 @@ def get_focus(ak):
             "pb": float(v["市净率"]), "ps": float(v["市销率"]), "peg": float(v["PEG值"]),
         })
     except Exception:
-        pass
+        # 估值也失败时，用新浪流通股*收盘价兜底市值
+        if "mktcap" not in result:
+            try:
+                sh = float(result.get("_shares") or 0)
+                if sh:
+                    result["mktcap"] = result["last"] * sh
+            except Exception:
+                pass
+    result.pop("_shares", None)
     return result
+
+
+def _get_focus_sina(ak, code, name):
+    """新浪回退：东财断连时用 stock_zh_a_daily 取数并自算涨跌幅。"""
+    prefix = "sh" if code.startswith(("6", "9")) else "sz"
+    df = ak.stock_zh_a_daily(symbol=prefix + code, adjust="")
+    tail = df.tail(2).to_dict("records")
+    last = tail[-1]
+    prev_close = tail[0]["close"] if len(tail) == 2 else last["open"]
+    pct = (last["close"] / prev_close - 1) * 100 if prev_close else 0.0
+    recent = df.tail(250)
+    return {
+        "code": code, "name": name,
+        "last": round(float(last["close"]), 2), "pct": round(float(pct), 2),
+        "open": round(float(last["open"]), 2), "high": round(float(last["high"]), 2),
+        "low": round(float(last["low"]), 2),
+        "turnover": round(float(last["turnover"]) * 100, 2), "amount": float(last["amount"]),
+        "yr_high": round(float(recent["high"].max()), 2),
+        "yr_low": round(float(recent["low"].min()), 2),
+        "date": str(last["date"]),
+        "_shares": float(last.get("outstanding_share") or 0),
+    }
 
 
 def main():
