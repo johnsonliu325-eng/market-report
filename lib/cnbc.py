@@ -19,8 +19,48 @@ def _get(url, retries=3):
     raise last
 
 
+YBASE = "https://query1.finance.yahoo.com/v8/finance/chart/"
+YUA = "Mozilla/5.0"  # Yahoo 对完整 Chrome UA 会 429，用简短 UA
+
+
+def _yget(url, retries=3):
+    last = None
+    for i in range(retries):
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": YUA})
+            with urllib.request.urlopen(req, timeout=15) as r:
+                return json.loads(r.read().decode("utf-8", "ignore"))
+        except Exception as e:
+            last = e
+            time.sleep(1.5 * (i + 1))
+    raise last
+
+
+def _yahoo_quote(ticker):
+    """Yahoo chart 备源：返回与 CNBC 兼容的 {last, change, change_pct, name}。
+    仅用于普通美股 ticker（个股/ETF），指数（. 前缀）不走此源。"""
+    url = f"{YBASE}{urllib.parse.quote(ticker)}?interval=1d&range=1d"
+    d = _yget(url)
+    m = d["chart"]["result"][0]["meta"]
+    last = m.get("regularMarketPrice")
+    prev = m.get("previousClose") or m.get("chartPreviousClose")
+    if last is None:
+        raise ValueError("no price")
+    chg = (last - prev) if prev else None
+    pct = (chg / prev * 100) if (chg is not None and prev) else None
+    return {
+        "symbol": ticker,
+        "name": m.get("shortName") or m.get("longName") or ticker,
+        "last": f"{last:,.2f}",
+        "change": f"{chg:+.2f}" if chg is not None else "",
+        "change_pct": f"{pct:+.2f}%" if pct is not None else "",
+        "_src": "yahoo",
+    }
+
+
 def quotes(symbols):
-    """symbols: list of CNBC symbols. 返回 dict{symbol: {name,last,change,change_pct,...}}"""
+    """symbols: list of CNBC symbols. 返回 dict{symbol: {name,last,change,change_pct,...}}
+    CNBC 为主源；普通美股 ticker 若 CNBC 缺失/报错，自动回退 Yahoo。"""
     out = {}
     # CNBC 一次能拉很多，但分批更稳（每批 20）
     for i in range(0, len(symbols), 20):
@@ -40,6 +80,16 @@ def quotes(symbols):
             for s in batch:
                 out[s] = {"symbol": s, "error": str(e)[:60]}
         time.sleep(0.4)
+    # Yahoo 备源：补齐 CNBC 缺失或报错的普通美股 ticker（跳过 . 前缀指数与含特殊符号的商品符号）
+    for s in symbols:
+        got = out.get(s)
+        need = got is None or got.get("error") or (got.get("last") in (None, "", "N/A"))
+        if need and s and s[0].isalnum() and all(ch not in s for ch in ".@=|"):
+            try:
+                out[s] = _yahoo_quote(s)
+                time.sleep(0.3)
+            except Exception:
+                pass
     return out
 
 

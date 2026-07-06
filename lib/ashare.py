@@ -22,7 +22,25 @@ OUT = os.path.join(os.path.dirname(__file__), "..", "ashare_data.json")
 
 
 def get_indices(ak):
-    df = ak.stock_zh_index_spot_sina()
+    """指数：新浪为主源，失败切东财。返回 (list, src)。"""
+    try:
+        df = ak.stock_zh_index_spot_sina()
+        out = []
+        for name in INDEX_NAMES:
+            row = df[df["名称"] == name]
+            if not row.empty:
+                r = row.iloc[0]
+                out.append({"name": name, "last": float(r["最新价"]), "pct": float(r["涨跌幅"])})
+        if out:
+            return out, "sina"
+        raise ValueError("sina empty")
+    except Exception:
+        return _indices_em(ak), "东财"
+
+
+def _indices_em(ak):
+    """东财指数备源。字段：名称/最新价/涨跌幅(百分数)。"""
+    df = ak.stock_zh_index_spot_em(symbol="沪深重要指数")
     out = []
     for name in INDEX_NAMES:
         row = df[df["名称"] == name]
@@ -32,17 +50,18 @@ def get_indices(ak):
     return out
 
 
-def get_etfs(ak):
-    df = ak.fund_etf_spot_em()
+def _pick_etfs(df, code_key="代码", strip_prefix=False):
+    """从 ETF 快照 df 中按关键词挑成交额最大的主流 ETF。"""
     out, used = [], set()
     for kw, label in ETF_KEYWORDS:
         hit = df[df["名称"].str.contains(kw, na=False)]
         if hit.empty:
             continue
-        # 选成交额最大的主流ETF
         hit = hit.sort_values("成交额", ascending=False)
         for _, r in hit.iterrows():
-            code = r["代码"]
+            code = str(r[code_key])
+            if strip_prefix:
+                code = code[2:] if code[:2] in ("sh", "sz") else code
             if code in used:
                 continue
             used.add(code)
@@ -50,6 +69,19 @@ def get_etfs(ak):
                         "last": float(r["最新价"]), "pct": float(r["涨跌幅"])})
             break
     return out
+
+
+def get_etfs(ak):
+    """行业ETF：东财为主源，失败切新浪。返回 (list, src)。"""
+    try:
+        df = ak.fund_etf_spot_em()
+        out = _pick_etfs(df)
+        if out:
+            return out, "东财"
+        raise ValueError("em empty")
+    except Exception:
+        df = ak.fund_etf_category_sina(symbol="ETF基金")
+        return _pick_etfs(df, strip_prefix=True), "sina"
 
 
 def get_focus(ak):
@@ -67,8 +99,10 @@ def get_focus(ak):
             "yr_high": float(recent["最高"].max()), "yr_low": float(recent["最低"].min()),
             "date": str(last["日期"]),
         }
+        result["_src"] = "东财"
     except Exception:
         result = _get_focus_sina(ak, code, name)
+        result["_src"] = "sina"
     # 估值补充（失败不影响主流程）
     try:
         v = ak.stock_value_em(symbol=code).iloc[-1]
@@ -114,18 +148,21 @@ def _get_focus_sina(ak, code, name):
 def main():
     import akshare as ak
     data = {"generated_at": datetime.datetime.now().strftime("%Y-%m-%d %H:%M")}
+    src = {}
     try:
-        data["indices"] = get_indices(ak)
+        data["indices"], src["indices"] = get_indices(ak)
     except Exception as e:
         data["indices"], data["index_err"] = [], str(e)[:80]
     try:
-        data["etfs"] = get_etfs(ak)
+        data["etfs"], src["etfs"] = get_etfs(ak)
     except Exception as e:
         data["etfs"], data["etf_err"] = [], str(e)[:80]
     try:
         data["focus"] = get_focus(ak)
+        src["focus"] = data["focus"].get("_src", "东财") if data["focus"] else None
     except Exception as e:
         data["focus"], data["focus_err"] = None, str(e)[:80]
+    data["_src"] = src
 
     with open(OUT, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=1)

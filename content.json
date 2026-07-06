@@ -1,53 +1,47 @@
 {
-  "generated_at": "2026-07-06 09:15 北京时间",
+  "generated_at": "2026-07-06 10:20 北京时间",
   "news": [
     {
-      "title": "二季度标普500涨14.9%创近年最佳单季，下半年开局科技股频繁震荡",
-      "source": "Reuters / Yahoo Finance",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/investors-look-fed-clues-earnings-130003408.html",
-      "note": "半导体与科技权重股是二季度主要推手，但7月开局大盘随科技股宽幅波动，市场进入'验证盈利能否接棒估值'的窗口。"
+      "title": "本周美股焦点：Fed 6月会议纪要 + Q2财报季开闸，油价上涨添通胀变量",
+      "source": "Reuters / Economic Times",
+      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/wall-street-week-ahead-investors-look-for-fed-rate-clues-earnings-signs-as-tech-wobbles/articleshow/132174195.cms",
+      "note": "上周三大指数续创新高（道指52900、标普7483 +1.8%），本周看点转向 Fed 纪要给利率线索、Delta与百事打头阵的财报季、以及 ISM 服务业 PMI；油价上涨对通胀是新扰动，科技股近期频繁'摇摆'。"
     },
     {
-      "title": "美国非农就业不及预期，加息预期降温，Fed会议纪要与Q2财报季成焦点",
-      "source": "IG / Economic Times",
-      "url": "https://www.ig.com/en/news-and-trade-ideas/weekly-market-navigator-6-jul-2026-260706",
-      "note": "就业走软压低了进一步加息的押注（本轮Fed主席Warsh坚守2%目标），银行股7月14日起打响Q2财报季，本周先看Fed纪要和PMI。"
+      "title": "Amazon Q2财报定档7月30日，共识营收约1958亿、目标价看至313美元",
+      "source": "moomoo / TipRanks / TradingNews",
+      "url": "https://www.tradingnews.com/news/amazon-holds-244-usd-into-the-july-30-print-as-aws-runs-at-a-150b-usd",
+      "note": "华尔街共识 Q2 营收~$195.8B、EPS~$1.81（公司指引营收$194-199B、营业利润$20-24B）。Wells Fargo 上调目标价至$313维持买入，共识$313隐含约28%上行。财报是验证'AWS变现能否追上$200B AI capex'的关键节点。"
     },
     {
-      "title": "O'Reilly拟以100亿美元现金收购Genuine Parts汽配业务，GPC单日暴涨13%",
-      "source": "Stocktwits / Zacks",
-      "url": "https://www.zacks.com/stock/news/2947451/genuine-parts-gpc-moves-129-higher-will-this-strength-last",
-      "note": "GPC今年2月已聘JPMorgan、Guggenheim为分拆汽配业务、转型纯工业分销做准备，收购传闻点燃'价值重估'交易，但有分析师提示成交量偏薄、存在多头陷阱风险。"
+      "title": "思源电气Q1营收45.69亿(+41.6%)、净利5.5亿(+23.2%)，拟每10股派7元",
+      "source": "AAStocks / 公司公告",
+      "url": "https://www.aastocks.com/sc/cnhk/quote/stock-news-content/002028/GLH5217943N/GLH",
+      "note": "一季度营收同比增41.6%、归母净利增23.2%，扣非净利增12.8%，增长强劲印证电力设备高景气；同时公告分红每10股派7元。近期副总经理章良栋计划减持不超4万股（占总股本0.0051%，量极小，非趋势信号）。"
     },
     {
-      "title": "FDA顾问委员会9-0力挺Moderna mRNA流感疫苗，叠加Science Day转型故事，MRNA一周飙升逾33%",
-      "source": "Ars Technica / Zacks",
-      "url": "https://www.zacks.com/stock/news/2947872/mrna-stock-on-the-move:-what-sparked-the-33.5-jump-in-the-past-week?",
-      "note": "顾问委员会一致推荐批准其季节性mRNA流感疫苗（此前一名官员曾试图阻挠），公司在Science Day上抛出'从疫苗公司走向多元化生物科技'的蓝图，情绪与基本面共振。"
+      "title": "A股半年报预披露拉开：36家公司29家预喜，通信/电子/有色增速居前",
+      "source": "全球矿产资源网",
+      "url": "https://www.worldmr.net/Industry/IndustryList/Info/2026-07-03/323911.shtml",
+      "note": "首批半年报预披露多数预喜，通信、电子、有色金属等科技与周期行业中报业绩增速相对较高；市场进入'用中报业绩验证板块景气'的窗口，电力设备产业链值得同步跟踪。"
     },
     {
-      "title": "AWS储备实例价格上调约20%，回应云端AI算力供不应求",
-      "source": "Techi",
-      "url": "https://www.techi.com/amazon-stock-aws-price-hike-meta/",
-      "note": "7月1日起AWS对预留实例提价约20%，一边是AI算力紧俏的定价权，一边是巨额capex压力，直接指向Amazon云业务的利润率与需求弹性。"
-    },
-    {
-      "title": "A股缩量整理：上证守4043点微跌，电力设备板块延续高景气",
-      "source": "行情数据（akshare）",
-      "url": "https://www.sieyuan.com/",
-      "note": "沪深300、中证500小幅回落，指数进入震荡；一季度上海电气、东方电气、时代电气净利普遍双位数增长，印证电力设备/特高压产业链景气仍在。"
+      "title": "A股结构分化：绿电、机器人等概念活跃，AI硬件与锂电波动加大",
+      "source": "东方财富 / 网易财经",
+      "url": "https://caifuhao.eastmoney.com/news/20260626151413224087630",
+      "note": "近期盘面呈结构性行情，绿电、机器人等政策/主题受益方向活跃，AI硬件、通信、锂电等前期强势科技成长股波动放大，资金在高低切换，指数整体缩量震荡。"
     }
   ],
   "gainer_intros": {
-    "GPC": "Genuine Parts，全球汽配与工业零部件分销商（NAPA品牌），今日因O'Reilly拟100亿美元收购其汽配业务、分拆重估预期大涨。",
+    "GPC": "Genuine Parts，全球汽配与工业零部件分销商（NAPA品牌），因 O'Reilly 拟约100亿美元收购其汽配业务、分拆重估预期大涨。",
     "MRNA": "Moderna，mRNA疫苗龙头，FDA顾问委员会9-0通过其流感疫苗、叠加Science Day多元化转型叙事，一周累涨逾33%。",
     "FIG": "Figma，云端协作设计软件平台，设计工具赛道情绪回暖带动股价走强。",
     "ABVX": "Abivax，法国生物制药公司（美股ADR），临床管线催化推动股价大幅波动。",
-    "HONA": "Honeywell Aerospace，霍尼韦尔航空航天业务，航空与国防需求支撑，今日随板块走高。",
+    "HONA": "Honeywell Aerospace，霍尼韦尔航空航天业务，航空与国防需求支撑，随板块走高。",
     "RIVN": "Rivian，美国电动皮卡/SUV制造商，交付与产能预期改善带动反弹。",
     "MSTR": "Strategy（原MicroStrategy），持有大量比特币的'加密代理股'，随加密资产情绪回暖大涨。",
     "CACI": "CACI International，美国国防与情报IT服务商，政府订单预期支撑股价。"
   },
-  "amazon_commentary": "AMZN收于242.67美元（+0.40%），距5月278美元的高点仍低约12%，年内涨约9%。市场分歧的核心不在需求、而在花钱的节奏：一边是约2000亿美元的AI capex压制自由现金流，一边是AWS一季度同比增28%、跑到约1500亿美元年化收入、在手订单(backlog)达约3640亿美元的强劲基本面。7月1日AWS对预留实例提价约20%，某种程度上是给'算力供不应求'的定价权做了背书。\n估值上，卖方主流目标价约313美元，最乐观的叙事甚至给到450美元公平价，逻辑都建立在'今天重投入、明天收租金'。近期看点集中在两条线：新设立的10亿美元AWS Forward Deployed Engineering团队（把AI工程师嵌入客户、加速企业AI落地）和与Anthropic的合作+自研Trainium芯片，指向AWS想同时拿下'算力+落地服务'两端。\n对我们的跟踪而言，7月30日的财报是关键验证点——重点看AWS增速能否守住25%+、capex指引是否再上台阶、以及广告业务的利润贡献。当前位置属于'基本面不差、就等盈利兑现打消capex担忧'，回调更多是情绪与节奏问题，而非逻辑破位。",
-  "siyuan_commentary": "思源电气(002028)最新收于167.65元（+7.86%），换手率2.73%，总市值约1024亿元。把镜头拉长看，年内股价区间在69.92—239.12元之间，当前处于自高点回落后的中枢震荡区，今日的强反弹更像是超跌后的情绪修复，而非趋势级别的突破。\n基本面上，电力设备与特高压产业链景气度仍在延续——一季度上海电气、东方电气、时代电气等同业净利普遍双位数增长，行业需求(电网投资、特高压、储能、出海)并未证伪。思源的核心看点依旧是三条主线：国内电网招标的份额、海外市场(尤其是新兴市场输配电设备)的出海放量，以及储能业务的增量。需要留意的是，股价从年内高点回撤幅度不小，说明市场对高估值、高预期已有一轮消化，后续更看半年报订单与海外收入能否给出超预期数据来支撑估值修复。跟踪上建议紧盯中报披露的在手订单和海外营收占比。"
+  "amazon_commentary": "AMZN现价约242.67美元，距5月278美元的高点回落约12%，年内涨约9%。市场分歧的核心不在需求、而在花钱的节奏：约2000亿美元的AI capex已把自由现金流压到极低（有测算称仅约$1.2B），但AWS一季度同比增28%（15个季度以来最快）、AI收入年化超$150亿、在手订单$364B仍强劲。7月1日AWS对预留实例提价约20%，是给'算力供不应求'的定价权做背书。\n估值上，现价对应约24x前瞻PE，Wells Fargo刚上调目标价至$313并维持买入，卖方共识$313隐含约28%上行空间；乐观叙事看年内摸$300。逻辑都建立在'今天重投入、明天收租金'——AWS Forward Deployed Engineering团队（把AI工程师嵌入客户）和自研Trainium芯片+Anthropic合作，指向AWS想同时拿下算力与落地服务两端。\n对我们的跟踪而言，7月30日的Q2财报是关键验证点：公司指引营收$194-199B、营业利润$20-24B，共识营收~$195.8B、EPS~$1.81。重点看AWS增速能否守25%+（甚至升向31%）、capex指引是否再上台阶、广告与北美利润率能否对冲。当前位置属于'基本面不差、就等盈利兑现打消capex担忧'，回调更多是情绪与节奏，而非逻辑破位。",
+  "siyuan_commentary": "思源电气(002028)最新收于167.65元（+7.86%），换手率2.73%，PE(TTM)约40倍、PB约8.1倍，总市值约1312亿元。把镜头拉长看，股价年内从高位（今年3月约219元、5月约206元）一路回落到当前区间，今日的强反弹更像超跌后的情绪修复，估值经过一轮消化后已不算极端偏贵。\n基本面依然是这只票的底气：一季度营收45.69亿元（同比+41.6%）、归母净利5.5亿元（同比+23.2%），增长强劲，印证电力设备/特高压产业链高景气仍在延续；公司同时公告每10股派7元分红。核心看点仍是三条主线——国内电网招标份额、海外（尤其新兴市场输配电设备）出海放量、储能业务增量。近期一则副总经理拟减持不超4万股的公告（仅占总股本0.0051%），量极小、不构成趋势信号，无需过度解读。跟踪上建议紧盯即将披露的中报：在手订单和海外营收占比能否延续Q1的高增速，是估值能否修复的关键。"
 }

@@ -46,3 +46,16 @@ SECTOR_ETF = [
 FOCUS = [
     ("AMZN", "Amazon"),
 ]
+
+# 宏观指标（CNBC 单接口全覆盖）：利率/汇率/商品/情绪
+# 第三项 kind: "rate"=收益率(越低越暖), "risk"=风险情绪(涨为警示), "asset"=普通资产
+MACRO = [
+    ("US10Y",   "美10年期国债", "rate"),
+    ("US2Y",    "美2年期国债",  "rate"),
+    (".DXY",    "美元指数",     "asset"),
+    ("@CL.1",   "WTI原油",      "asset"),
+    ("@GC.1",   "COMEX黄金",    "asset"),
+    ("BTC.CB=", "比特币",       "asset"),
+    (".VIX",    "VIX恐慌指数",  "risk"),
+]
+

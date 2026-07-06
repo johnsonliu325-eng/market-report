@@ -6,7 +6,7 @@
 import sys, os, json, datetime
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "lib"))
 from cnbc import quotes, num
-from symbols import INDICES, SECTOR_ETF, FOCUS
+from symbols import INDICES, SECTOR_ETF, FOCUS, MACRO
 from gainers import top_gainers
 
 SITE_DIR = os.path.join(os.path.dirname(__file__), "site")
@@ -69,6 +69,32 @@ def table(title, pairs, q):
         f'<th>代码</th><th>名称</th><th>现价</th><th>涨跌%</th>'
         f'</tr></thead><tbody>{"".join(rows)}</tbody></table>'
     )
+
+
+def macro_section(q):
+    """宏观指标卡片：利率/汇率/商品/情绪。放美股板块顶部做背景。
+    利率与 VIX 不套涨绿跌红（方向含义不同），用中性蓝+箭头。"""
+    cards = []
+    for sym, cn, kind in MACRO:
+        d = q.get(sym, {})
+        last = d.get("last", "N/A")
+        p = num(d, "change_pct")
+        raw = d.get("change_pct", "")
+        if last in (None, "N/A", ""):
+            continue
+        if kind in ("rate", "risk"):
+            c = "#94a3b8"  # 中性：利率/恐慌指数方向含义与股价相反，不套红绿
+        else:
+            c = color(p)
+        arrow = "▲" if (p or 0) > 0 else ("▼" if (p or 0) < 0 else "")
+        cards.append(
+            f'<div class="mcard"><div class="ml">{cn}</div>'
+            f'<div class="mv">{last}</div>'
+            f'<div class="mp" style="color:{c}">{arrow} {raw}</div></div>'
+        )
+    if not cards:
+        return ""
+    return f'<h2>宏观快照</h2><div class="macrogrid">{"".join(cards)}</div>'
 
 
 def heatmap(pairs, q):
@@ -297,6 +323,11 @@ tr:hover{background:#161a22}
 .posbar{position:relative;height:6px;background:#2a2f3a;border-radius:3px;margin:20px 0 6px}
 .posfill{position:absolute;top:-3px;width:12px;height:12px;background:#60a5fa;border-radius:50%;transform:translateX(-50%)}
 .poslbl{display:flex;justify-content:space-between;font-size:11px;color:#6b7280}
+.macrogrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin-top:8px}
+.mcard{background:#0f1115;border:1px solid #1a1e26;padding:10px 12px;border-radius:8px}
+.ml{font-size:11px;color:#6b7280}
+.mv{font-size:18px;font-weight:700;margin-top:3px}
+.mp{font-size:12px;font-weight:600;margin-top:2px}
 .statgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:16px}
 .stat{background:#0f1115;padding:10px;border-radius:6px}
 .sl{font-size:11px;color:#6b7280}.sv{font-size:15px;font-weight:600;margin-top:2px}
@@ -314,7 +345,7 @@ tr:hover{background:#161a22}
 
 
 def main():
-    all_syms = [s for s, _ in INDICES + SECTOR_ETF + FOCUS]
+    all_syms = [s for s, _ in INDICES + SECTOR_ETF + FOCUS] + [s for s, _, _ in MACRO]
     q = quotes(all_syms)
     now = bj_now().strftime("%Y-%m-%d %H:%M")
     c = load_content()
@@ -326,6 +357,7 @@ def main():
         f'<h1>每日晨报 <span class="ts">{now} 北京时间</span></h1>',
         updated,
         '<h2 style="border-top:1px solid #2a2f3a;padding-top:20px">🇺🇸 美股</h2>',
+        macro_section(q),
         news_section(c.get("news"), title="美股精选新闻"),
         amazon_card(q),
         amazon_commentary(c.get("amazon_commentary")),
@@ -337,7 +369,7 @@ def main():
         '<h2 style="border-top:1px solid #2a2f3a;padding-top:20px">🇨🇳 A股</h2>',
         news_section(c.get("ashare_news"), title="A股精选新闻"),
         ashare_section(a, commentary=c.get("siyuan_commentary", ""), with_header=False),
-        '<div class="note">美股行情 CNBC/Nasdaq，A股行情 akshare。新闻精选、公司简介与个股观点由 Claude 在终端生成后同步。</div>',
+        '<div class="note">美股行情 CNBC（缺失自动回退 Yahoo Finance），宏观指标（美债/美元/原油/黄金/VIX/比特币）CNBC，美股领涨 Nasdaq，A股行情 akshare（新浪+东财互为备源）。新闻精选、公司简介与个股观点由 Claude 在终端生成后同步。</div>',
     ]
     html = (f'<!DOCTYPE html><html lang="zh"><head><meta charset="utf-8">'
             f'<meta name="viewport" content="width=device-width,initial-scale=1">'
