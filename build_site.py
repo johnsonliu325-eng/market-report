@@ -273,12 +273,13 @@ def ashare_section(a, commentary="", with_header=True):
         pos = None
         if f.get("yr_high") and f.get("yr_low") and f["yr_high"] > f["yr_low"]:
             pos = (f["last"] - f["yr_low"]) / (f["yr_high"] - f["yr_low"]) * 100
-        stats = [("总市值", f'{f.get("mktcap",0)/1e8:.0f}亿' if f.get("mktcap") else "N/A"),
+        stats = [("总市值", f'{f.get("mktcap",0)/1e8:.0f}亿' if f.get("mktcap") else None),
                  ("PE(TTM)", f.get("pe_ttm")), ("PB", f.get("pb")),
-                 ("PS", f.get("ps")), ("PEG", f.get("peg")), ("换手率", f'{f.get("turnover")}%')]
+                 ("PS", f.get("ps")), ("PEG", f.get("peg")),
+                 ("换手率", f'{f.get("turnover")}%' if f.get("turnover") is not None else None)]
         grid = "".join(f'<div class="stat"><div class="sl">{k}</div>'
                        f'<div class="sv">{round(v,2) if isinstance(v,float) else v}</div></div>'
-                       for k, v in stats)
+                       for k, v in stats if v is not None)
         pctc = "#dc2626" if f["pct"] > 0 else "#16a34a"
         posbar = ""
         if pos is not None:

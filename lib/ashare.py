@@ -2,7 +2,7 @@
 """A股数据取数：关键指数 + 行业ETF + 思源电气。用 akshare。
 仅在本地运行（akshare 不适合 GitHub 云端），输出 ashare_data.json 供 build_site 读取。
 """
-import json, os, datetime
+import json, os, datetime, urllib.request
 
 # 关注的指数（新浪名称）
 INDEX_NAMES = ["上证指数", "深证成指", "创业板指", "沪深300", "科创50", "中证500", "北证50"]
@@ -21,6 +21,44 @@ FOCUS_STOCK = ("002028", "思源电气")
 OUT = os.path.join(os.path.dirname(__file__), "..", "ashare_data.json")
 
 
+# 指数 -> 新浪日线代码，用于盘前竞价窗口指数被清零时回补上一交易日
+INDEX_SINA_CODE = {
+    "上证指数": "sh000001", "深证成指": "sz399001", "创业板指": "sz399006",
+    "沪深300": "sh000300", "科创50": "sh000688", "中证500": "sh000905",
+    "北证50": "bj899050",
+}
+
+
+def _backfill_indices(ak, indices):
+    """盘前竞价窗口 sina 把指数现价/涨跌幅清零。用新浪日线上一交易日收盘补齐。
+    判定盘前：现价为 0，或多数指数涨跌幅≈0（当日尚未成交）——两种都补齐为上一完整交易日。
+    """
+    import time
+    if not indices:
+        return False
+    near_zero = sum(1 for i in indices if abs(i.get("pct") or 0) < 0.01)
+    pre_open = near_zero >= max(2, len(indices) // 2)
+    filled = False
+    for idx in indices:
+        if idx["last"] > 0 and not pre_open:
+            continue
+        sym = INDEX_SINA_CODE.get(idx["name"])
+        if not sym:
+            continue
+        for attempt in range(4):
+            try:
+                h = ak.stock_zh_index_daily(symbol=sym)
+                if h is not None and len(h) >= 2:
+                    c1 = float(h.iloc[-1]["close"]); c0 = float(h.iloc[-2]["close"])
+                    idx["last"] = round(c1, 2)
+                    idx["pct"] = round((c1 / c0 - 1) * 100, 2) if c0 else 0.0
+                    filled = True
+                break
+            except Exception:
+                time.sleep(0.8 * (attempt + 1))
+    return filled
+
+
 def get_indices(ak):
     """指数：新浪为主源，失败切东财。返回 (list, src)。"""
     try:
@@ -32,7 +70,10 @@ def get_indices(ak):
                 r = row.iloc[0]
                 out.append({"name": name, "last": float(r["最新价"]), "pct": float(r["涨跌幅"])})
         if out:
-            return out, "sina"
+            src = "sina"
+            if _backfill_indices(ak, out):
+                src = "sina(盘前用上一交易日收盘)"
+            return out, src
         raise ValueError("sina empty")
     except Exception:
         return _indices_em(ak), "东财"
@@ -71,13 +112,46 @@ def _pick_etfs(df, code_key="代码", strip_prefix=False):
     return out
 
 
+def _sina_etf_code(code):
+    """把纯数字 ETF 代码转成新浪带市场前缀格式。5x/6x=沪，1x=深。"""
+    c = str(code)
+    return ("sh" if c[:1] in ("5", "6", "9") else "sz") + c
+
+
+def _backfill_etfs(ak, etfs):
+    """盘前东财快照的最新价/涨跌幅为 NaN 时，用新浪日线上一交易日收盘价补齐（自算涨跌幅）。"""
+    import math, time
+    filled = False
+    for e in etfs:
+        bad = (isinstance(e.get("last"), float) and math.isnan(e["last"])) or \
+              (isinstance(e.get("pct"), float) and math.isnan(e["pct"]))
+        if not bad:
+            continue
+        for attempt in range(4):
+            try:
+                h = ak.fund_etf_hist_sina(symbol=_sina_etf_code(e["code"]))
+                if h is not None and len(h) >= 2:
+                    c1 = float(h.iloc[-1]["close"])
+                    c0 = float(h.iloc[-2]["close"])
+                    e["last"] = round(c1, 3)
+                    e["pct"] = round((c1 / c0 - 1) * 100, 2) if c0 else 0.0
+                    filled = True
+                break
+            except Exception:
+                time.sleep(0.8 * (attempt + 1))
+    return filled
+
+
 def get_etfs(ak):
     """行业ETF：东财为主源，失败切新浪。返回 (list, src)。"""
     try:
         df = ak.fund_etf_spot_em()
         out = _pick_etfs(df)
         if out:
-            return out, "东财"
+            src = "东财"
+            if _backfill_etfs(ak, out):
+                src = "东财(盘前用上一交易日收盘)"
+            return out, src
         raise ValueError("em empty")
     except Exception:
         df = ak.fund_etf_category_sina(symbol="ETF基金")
@@ -86,29 +160,53 @@ def get_etfs(ak):
 
 def get_focus(ak):
     code, name = FOCUS_STOCK
-    # 主接口：东财历史（字段全）；失败则回退新浪（sz/sh 前缀）
+    prefix = "sh" if code.startswith(("6", "9")) else "sz"
+    # 主源：新浪实时 HTTP（盘中拿当日实时价，避免日线接口盘中只给上一交易日收盘）
     try:
-        df = ak.stock_zh_a_hist(symbol=code, period="daily", adjust="")
-        last = df.iloc[-1]
-        recent = df.tail(250)
-        result = {
-            "code": code, "name": name,
-            "last": float(last["收盘"]), "pct": float(last["涨跌幅"]),
-            "open": float(last["开盘"]), "high": float(last["最高"]), "low": float(last["最低"]),
-            "turnover": float(last["换手率"]), "amount": float(last["成交额"]),
-            "yr_high": float(recent["最高"].max()), "yr_low": float(recent["最低"].min()),
-            "date": str(last["日期"]),
-        }
-        result["_src"] = "东财"
+        result = _sina_realtime(code, prefix, name)
+        result["_src"] = "sina实时"
     except Exception:
-        result = _get_focus_sina(ak, code, name)
-        result["_src"] = "sina"
+        # 退路一：东财日线历史（盘中会滞后到上一交易日）
+        try:
+            df = ak.stock_zh_a_hist(symbol=code, period="daily", adjust="")
+            last = df.iloc[-1]
+            recent = df.tail(250)
+            result = {
+                "code": code, "name": name,
+                "last": float(last["收盘"]), "pct": float(last["涨跌幅"]),
+                "open": float(last["开盘"]), "high": float(last["最高"]), "low": float(last["最低"]),
+                "turnover": float(last["换手率"]), "amount": float(last["成交额"]),
+                "yr_high": float(recent["最高"].max()), "yr_low": float(recent["最低"].min()),
+                "date": str(last["日期"]),
+            }
+            result["_src"] = "东财日线"
+        except Exception:
+            # 退路二：新浪日线
+            result = _get_focus_sina(ak, code, name)
+            result["_src"] = "sina日线"
+    # 年内高低：实时源没有 52 周区间，用日线补（失败不影响）
+    if not result.get("yr_high"):
+        try:
+            hs = ak.stock_zh_a_daily(symbol=prefix + code, adjust="").tail(250)
+            result["yr_high"] = round(float(hs["high"].max()), 2)
+            result["yr_low"] = round(float(hs["low"].min()), 2)
+        except Exception:
+            pass
     # 估值补充（失败不影响主流程）
     try:
         v = ak.stock_value_em(symbol=code).iloc[-1]
+        mktcap = float(v["总市值"])
+        pe, pb, ps = float(v["PE(TTM)"]), float(v["市净率"]), float(v["市销率"])
+        val_date = str(v.get("数据日期", ""))[:10]
+        # 东财估值按估值日收盘价算；盘中实时价不同则等比缩放，保持与现价一致
+        if result.get("_src", "").startswith("sina实时") and val_date and val_date != result.get("date"):
+            close_v = _last_close_for_val(ak, prefix, code, val_date)
+            if close_v and close_v > 0:
+                k = result["last"] / close_v
+                mktcap, pe, pb, ps = mktcap * k, pe * k, pb * k, ps * k
         result.update({
-            "mktcap": float(v["总市值"]), "pe_ttm": float(v["PE(TTM)"]),
-            "pb": float(v["市净率"]), "ps": float(v["市销率"]), "peg": float(v["PEG值"]),
+            "mktcap": mktcap, "pe_ttm": round(pe, 2), "pb": round(pb, 2),
+            "ps": round(ps, 2), "peg": float(v["PEG值"]),
         })
     except Exception:
         # 估值也失败时，用新浪流通股*收盘价兜底市值
@@ -121,6 +219,46 @@ def get_focus(ak):
                 pass
     result.pop("_shares", None)
     return result
+
+
+def _sina_realtime(code, prefix, name):
+    """新浪实时行情 HTTP（hq.sinajs.cn），盘中拿当日实时价。
+    返回字段：现价/涨跌幅/开高低/成交额/日期(当日)。"""
+    url = f"https://hq.sinajs.cn/list={prefix}{code}"
+    req = urllib.request.Request(url, headers={
+        "User-Agent": "Mozilla/5.0", "Referer": "https://finance.sina.com.cn"})
+    txt = urllib.request.urlopen(req, timeout=10).read().decode("gbk", "ignore")
+    p = txt.split('"')[1].split(",")
+    if len(p) < 32 or not p[0]:
+        raise ValueError("sina realtime empty")
+    last, prev = float(p[3]), float(p[2])
+    # 盘前(9:15-9:30)集合竞价前：sina 已把日期滚到当日但成交额为 0，
+    # 现价=昨收、涨跌幅=0。此时应抛出，让上层回退到日线取上一完整交易日。
+    if float(p[9] or 0) <= 0:
+        raise ValueError("sina realtime pre-open (amount=0)")
+    if last <= 0:  # 停牌时现价为 0，回退昨收
+        last = prev
+    pct = (last / prev - 1) * 100 if prev else 0.0
+    return {
+        "code": code, "name": name,
+        "last": round(last, 2), "pct": round(pct, 2),
+        "open": round(float(p[1]), 2), "high": round(float(p[4]), 2), "low": round(float(p[5]), 2),
+        "amount": float(p[9]), "turnover": None,
+        "yr_high": None, "yr_low": None,
+        "date": p[30],
+    }
+
+
+def _last_close_for_val(ak, prefix, code, val_date):
+    """取估值日(val_date)的收盘价，用于把东财估值缩放到实时价。"""
+    try:
+        df = ak.stock_zh_a_daily(symbol=prefix + code, adjust="")
+        row = df[df["date"].astype(str) == val_date]
+        if not row.empty:
+            return float(row.iloc[-1]["close"])
+        return float(df.iloc[-1]["close"])  # 找不到就用最新收盘
+    except Exception:
+        return None
 
 
 def _get_focus_sina(ak, code, name):
