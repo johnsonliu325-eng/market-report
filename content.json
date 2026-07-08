@@ -1,53 +1,23 @@
 {
-  "generated_at": "2026-07-07 10:25 北京时间",
+  "generated_at": "2026-07-08 08:50 北京时间",
   "news": [
-    {
-      "title": "美股新周开门红：道指首破53000、纳指+1.1%，芯片股领涨修复上周回调",
-      "source": "CNBC / The Motley Fool / AP",
-      "url": "https://www.cnbc.com/2026/07/05/stock-market-today-live-updates.html",
-      "note": "独立日假期后首个交易日，标普+0.72%收7537.43、纳指+1.12%收26121.16、道指+0.30%收53056.80首次站上53000。Broadcom等芯片股集体反弹带动指数，但内部多数个股其实下跌——涨势高度集中在AI硬件，宽度偏弱。本周看点：Fed会议纪要 + Delta/百事打头阵的Q2财报季。"
-    },
-    {
-      "title": "IREN +13%：入围Anthropic澳洲约150亿美元数据中心招标短名单，触发空头回补",
-      "source": "Investing.com / AFR / MarketBeat",
-      "url": "https://www.investing.com/news/stock-market-news/why-is-iren-stock-surging-today-93CH-4776807",
-      "note": "AFR报道Anthropic拟在澳洲采购约1.4GW数据中心容量（约120-150亿美元），IREN进入短名单，盘中一度冲高至44.97美元。这家比特币矿企正加速转型AI云，18.7%的高空头持仓放大了逼空——AI电力/算力主题的高beta代表，卖方共识目标价约81.75美元。"
-    },
-    {
-      "title": "Bloom Energy +9%：Brookfield把AI供电融资框架从50亿加码到250亿美元（5倍扩容）",
-      "source": "BusinessWire / The Motley Fool / Yahoo Finance",
-      "url": "https://www.businesswire.com/news/home/20260630023022/en/Brookfield-and-Bloom-Energy-Expand-AI-Infrastructure-Partnership-to-$25-Billion-Fivefold-Increase-to-Build-and-Finance-Rapid-Power-for-AI-Infrastructure",
-      "note": "6月30日官宣：Brookfield将为Bloom供电AI基建项目的融资框架从50亿一举扩至250亿美元（5倍）。固体氧化物燃料电池成为AI数据中心'快速拿电'的关键方案，BE股价从6月底约249美元冲到7/6约303美元、年内涨约240%，是'电力瓶颈'交易里最猛的一只——与电力设备板块逻辑相通，值得对照A股电力/绿电看。"
-    },
-    {
-      "title": "思源电气Q1营收45.69亿(+41.6%)、净利5.5亿(+23.2%)，电力设备高景气延续",
-      "source": "AAStocks / 公司公告",
-      "url": "https://www.aastocks.com/sc/cnhk/quote/stock-news-content/002028/GLH5217943N/GLH",
-      "note": "一季度营收同比+41.6%、归母净利+23.2%（扣非净利+12.79%），印证特高压/电网+出海产业链景气仍在。股价从3月约219元、5月约206元回落后，当前PE约42倍、PB约8.5倍，估值已消化一轮。核心跟踪：国内电网招标份额、新兴市场输配电出海、储能增量。近期多位副总经理披露小额减持计划（合计约万分之几），影响有限但需留意。"
-    },
-    {
-      "title": "A股7月7日盘中分化：科创50+1.0%领涨、上证-0.8%，资金'高低切换'延续",
-      "source": "新浪财经 / 东方财富",
-      "url": "https://finance.sina.com.cn/",
-      "note": "盘中科创50+1.0%、科创芯片ETF+0.84%、半导体设备ETF+0.99%相对活跃，上证-0.77%、沪深300-0.52%、中证500-0.60%走弱，电力/绿电(电力ETF-1.93%)/证券/军工偏弱。结构上资金在科技成长与防御之间摇摆，中报业绩预披露开启，进入'用业绩验证景气'的窗口，指数量能仍待放大。"
-    },
-    {
-      "title": "Amazon Q2财报定档7月30日：AWS增速与AI capex节奏是最大看点",
-      "source": "TipRanks / MEXC",
-      "url": "https://www.tipranks.com/stocks/amzn/earnings",
-      "note": "公司指引Q2营收194-199亿美元、营业利润20-24亿美元（含大部分地区Prime Day）。Q1营收1815亿(+17%)、AWS同比+28%（15个季度最快）、年化跑到约1500亿，EPS 2.78大超预期。7月自研ASIC服务器出货目标上调、AWS预留实例提价，都在给'算力供不应求'背书。"
-    }
+    {"title": "美股7/7收跌：芯片股拖累纳指跌1.2%，油价因美撤销伊朗售油许可跳涨", "source": "Yahoo Finance / Barchart", "url": "https://finance.yahoo.com/markets/stocks/articles/markets-news-july-7-2026-105630397.html", "note": "标普500 -0.4%、纳指 -1.2%，市场质疑AI相关芯片股高估值；美国撤销伊朗原油出口许可后布油跳涨，能源股逆势领涨。地缘+估值双主题回归。"},
+    {"title": "Cloudflare获Scotiabank上调至跑赢，目标价$225→$300", "source": "MarketBeat", "url": "https://www.marketbeat.com/stocks/NYSE/NET/news/", "note": "NET当日 +8.6%领涨大盘。边缘计算/网络安全龙头，AI推理下沉到边缘的受益者，卖方看好其在AI流量分发中的卡位。"},
+    {"title": "Gilead三喜齐至：Trodelvy一线癌症获批+长效HIV三期成功+HSBC上调买入", "source": "StocksToTrade / HSBC", "url": "https://www.tradingkey.com/news/market-movers/262017024-market-movers-gild-20260707", "note": "GILD +5.2%。核心传染病管线（每周一次长效HIV）三期成功，HSBC上调至买入、目标价$133→$155。防御性医药在risk-off日获资金青睐。"},
+    {"title": "Cognizant深化Google Gemini合作、主权AI，自身部署10万员工", "source": "Investing.com / SimplyWall.St", "url": "https://www.investing.com/news/stock-market-news/why-is-cognizant-technology-stock-surging-today-93CH-4779884", "note": "CTSH +6.2%。IT服务商转型AI-first集成商的叙事，把Gemini/GPT-5.5工具化为高毛利工作。是'AI提效服务商'的代表标的。"},
+    {"title": "Amazon现价约$250，市场为$2000亿AI capex打折，聚焦7/30 Q2财报", "source": "TradingNews / TipRanks", "url": "https://www.tradingnews.com/news/amazon-holds-244-usd-into-the-july-30-print-as-aws-runs-at-a-150b-usd", "note": "AWS +28%（15季最快）、run-rate $150B、backlog $364B，但FCF被capex压制。Q2指引营收$194-199B。7/30财报验证AWS增速与capex节奏是关键催化。"},
+    {"title": "A股7/8盘中普跌：中证500 -1.6%领跌，仅科创50 +0.3%翻红", "source": "新浪财经", "url": "https://finance.sina.com.cn/", "note": "上证、深成、沪深300齐跌逾1%，电力ETF -2.2%走弱。市场情绪偏谨慎，成长风格（科创50）相对抗跌。"}
   ],
   "gainer_intros": {
-    "IREN": "IREN，由比特币矿企转型AI数据中心/云服务，因入围Anthropic澳洲约150亿美元数据中心招标短名单+空头回补，盘中一度涨约14%冲高至44.97美元。",
-    "QNT": "Quantinuum，量子计算纯正标的（6月IPO），上市后延续上涨、多家投行给'强烈买入'评级，量子主题资金追捧。",
-    "CRDO": "Credo Technology，高速互联方案（光/电以太网、PCIe），受益AI连接需求爆发，业绩高增+纳入指数带动目标价上调。",
-    "PS": "Pershing Square（Ackman旗下投资公司），宣布现金分红并随大盘与净值修复走高。",
-    "BE": "Bloom Energy，固体氧化物燃料电池供AI数据中心用电，Brookfield把相关融资框架从50亿加码至250亿美元，年内涨约240%。",
-    "ANET": "Arista Networks，AI网络交换机龙头，受益大厂'绕开英伟达'自建AI组网，随芯片/AI硬件反弹走强。",
-    "RIVN": "Rivian，美国电动皮卡/SUV厂商，交付强劲+上调全年指引带动股价上涨（留意增发相关的盘后波动）。",
-    "GFL": "GFL Environmental，加拿大固废与环境服务龙头，随防御/现金流板块获资金青睐走强。"
+    "NET": "Cloudflare，边缘计算/网络安全龙头。今日+8.6%，因Scotiabank上调至跑赢、目标价升至$300，看好其在AI边缘推理流量中的卡位。",
+    "VG": "Venture Global，美国LNG液化天然气出口商。今日+6.8%，受美撤销伊朗售油许可、油气价格跳涨带动。",
+    "CTSH": "Cognizant，IT服务外包龙头。今日+6.2%，因深化Google Gemini合作、推进主权AI并自身部署10万员工，AI-first转型叙事获认可。",
+    "OXY": "Occidental Petroleum，美国页岩油巨头（巴菲特重仓）。今日+5.9%，油价因伊朗地缘跳涨直接受益。",
+    "HUBS": "HubSpot，中小企业营销/CRM SaaS。今日+5.9%，软件股在AI应用变现预期下反弹。",
+    "EQNR": "Equinor，挪威国家石油公司。今日+5.8%，油价跳涨带动欧洲能源股。",
+    "FIG": "Figma，协作设计软件平台。今日+5.3%，设计工具AI化的代表，软件板块情绪修复。",
+    "GILD": "Gilead Sciences，抗病毒/肿瘤生物药龙头。今日+5.2%，Trodelvy一线癌症获批+长效HIV三期成功+HSBC上调买入三喜齐至。"
   },
-  "amazon_commentary": "AMZN现价约243美元，较5月约278美元的高点回落约12%，年内基本走平。周一（7/6）三大指数在芯片股带动下修复、道指首破53000，AMZN小幅跟随。市场对亚马逊的分歧从来不在需求，而在'花钱的节奏'：2026年约2000亿美元的AI capex把自由现金流压得很低，但AWS一季度同比+28%（15个季度最快）、年化跑到约1500亿，仍是最硬的底牌。Q1整体营收1815亿(+17%)、EPS 2.78大超预期(共识1.64)，北美与广告利润率也在改善。\n估值上现价对应约29倍PE、约24倍前瞻PE，卖方共识目标价看至约313美元，隐含约28%上行，逻辑都建立在'今天重投入、明天收租金'。对我们的跟踪而言，7月30日Q2财报是关键验证点：重点看AWS增速能否守25%+、capex指引是否再上台阶、含Prime Day的北美利润率能否对冲。公司此前指引Q2营收194-199亿、营业利润20-24亿。当前位置属于'基本面不差、就等盈利兑现打消capex担忧'，回调更多是情绪与节奏，而非逻辑破位。",
-  "siyuan_commentary": "思源电气(002028)今日盘中报170.7元（-2.01%走弱），全天区间169.2-176.2元、开于174.2元，成交额约5.97亿元；PE(TTM)约41.1倍、PB约8.3倍、PEG约0.68，总市值约1336亿元。把镜头拉长看，股价从今年3月约219元、5月约206元的高位回落到当前170元区间，估值经过一轮消化后已不算极端偏贵，距52周高点239元仍有距离、较52周低点69.9元则仍处高位。基本面依旧是这只票的底气：一季度营收45.69亿元（同比+41.6%）、归母净利5.5亿元（同比+23.2%、扣非+12.79%），增长强劲，印证电力设备/特高压产业链高景气仍在延续。\n核心看点仍是三条主线——国内电网招标份额、海外（尤其新兴市场输配电设备）出海放量、储能业务增量。跟踪上建议紧盯即将披露的中报：在手订单、海外营收占比能否延续Q1的高增速，是估值能否进一步修复的关键。近期公司多位副总经理披露小额减持计划（合计仅约总股本的万分之几），象征意义大于实质冲击，但情绪面需留意。海外AI数据中心'电力瓶颈'交易（如美股Bloom Energy被Brookfield加码至250亿美元）也在从主题层面强化电力设备的中长期需求叙事。"
+  "amazon_commentary": "现价约$250，较5月高点$278回撤约10%，市场核心分歧仍是$2000亿AI capex能不能变成自由现金流。Q1数据其实很强——AWS +28%（15个季度最快）、run-rate冲上$150B、backlog $364B、整体营业利润率13.1%创历史新高——但TTM自由现金流被前置capex压到近乎归零，6月市场因此把股价压在中性位置。\n一个值得盯的结构性视角：拆开capex会发现AWS独吞约68%的资本开支，意味着FCF焦虑本质只关于AWS一个分部，而零售+广告两个高毛利引擎其实是净现金机器。若这个'连坐错杀'成立，预期差可能在被误伤的现金牛。7/30 Q2财报（指引营收$194-199B、营业利润$20-24B）是关键催化：重点看AWS增速能否守住25%+、分部margin能否守住35%（这是capex变现跟不跟得上折旧的生命线指标）。",
+  "siyuan_commentary": "今日盘中大跌约4.7%至166元，明显回调，已跌破公司此前回购价上限219元不少。年内高点239元、低点70元，当前处于高位回落后的震荡区间。短期A股电力设备板块整体走弱（电力ETF -2.2%），情绪偏谨慎。\n中期跟踪点不变：一看特高压/主网设备的订单节奏（国网投资兑现度），二看出海占比能否持续提升（海外高毛利订单是估值弹性来源），三看即将披露的中报在手订单与储能业务进展。当前PE已从高位回落，估值消化中，需等基本面（中报订单）验证增长的持续性再判断性价比。"
 }
