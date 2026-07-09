@@ -1,23 +1,53 @@
 {
-  "generated_at": "2026-07-08 08:50 北京时间",
+  "generated_at": "2026-07-09 09:20 北京时间",
   "news": [
-    {"title": "美股7/7收跌：芯片股拖累纳指跌1.2%，油价因美撤销伊朗售油许可跳涨", "source": "Yahoo Finance / Barchart", "url": "https://finance.yahoo.com/markets/stocks/articles/markets-news-july-7-2026-105630397.html", "note": "标普500 -0.4%、纳指 -1.2%，市场质疑AI相关芯片股高估值；美国撤销伊朗原油出口许可后布油跳涨，能源股逆势领涨。地缘+估值双主题回归。"},
-    {"title": "Cloudflare获Scotiabank上调至跑赢，目标价$225→$300", "source": "MarketBeat", "url": "https://www.marketbeat.com/stocks/NYSE/NET/news/", "note": "NET当日 +8.6%领涨大盘。边缘计算/网络安全龙头，AI推理下沉到边缘的受益者，卖方看好其在AI流量分发中的卡位。"},
-    {"title": "Gilead三喜齐至：Trodelvy一线癌症获批+长效HIV三期成功+HSBC上调买入", "source": "StocksToTrade / HSBC", "url": "https://www.tradingkey.com/news/market-movers/262017024-market-movers-gild-20260707", "note": "GILD +5.2%。核心传染病管线（每周一次长效HIV）三期成功，HSBC上调至买入、目标价$133→$155。防御性医药在risk-off日获资金青睐。"},
-    {"title": "Cognizant深化Google Gemini合作、主权AI，自身部署10万员工", "source": "Investing.com / SimplyWall.St", "url": "https://www.investing.com/news/stock-market-news/why-is-cognizant-technology-stock-surging-today-93CH-4779884", "note": "CTSH +6.2%。IT服务商转型AI-first集成商的叙事，把Gemini/GPT-5.5工具化为高毛利工作。是'AI提效服务商'的代表标的。"},
-    {"title": "Amazon现价约$250，市场为$2000亿AI capex打折，聚焦7/30 Q2财报", "source": "TradingNews / TipRanks", "url": "https://www.tradingnews.com/news/amazon-holds-244-usd-into-the-july-30-print-as-aws-runs-at-a-150b-usd", "note": "AWS +28%（15季最快）、run-rate $150B、backlog $364B，但FCF被capex压制。Q2指引营收$194-199B。7/30财报验证AWS增速与capex节奏是关键催化。"},
-    {"title": "A股7/8盘中普跌：中证500 -1.6%领跌，仅科创50 +0.3%翻红", "source": "新浪财经", "url": "https://finance.sina.com.cn/", "note": "上证、深成、沪深300齐跌逾1%，电力ETF -2.2%走弱。市场情绪偏谨慎，成长风格（科创50）相对抗跌。"}
+    {
+      "title": "美股收跌：油价因美伊紧张走高，AI/芯片担忧压制大盘",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-news-july-8-095100764.html",
+      "note": "7月8日纳指收跌1.16%至25,818，标普500跌0.45%至7,503，道指微跌0.25%。特朗普称对伊谈判'结束'推升原油，半导体承压，但AI基建与中概逆势走强。"
+    },
+    {
+      "title": "TeraWulf飙升12.8%：Anthropic 190亿美元、20年AI数据中心租约点燃板块",
+      "source": "ts2.tech / 247WallSt",
+      "url": "https://247wallst.com/investing/2026/07/08/terawulf-rises-12-iren-climbs-7-as-ai-infrastructure-stocks-bounce-back/",
+      "note": "WULF收22.83美元、单日+12.8%，带动IREN+8%、CoreWeave、Hut8等AI算力/矿企集体反弹，从周二回调中修复。Bernstein维持Outperform、目标36美元。"
+    },
+    {
+      "title": "阿里巴巴单日大涨11%：DOJ/五角大楼诉讼获喘息+财报前乐观情绪",
+      "source": "Bloomberg / MarketBeat",
+      "url": "https://www.marketbeat.com/instant-alerts/alibaba-group-nysebaba-trading-up-11-should-you-buy-2026-07-08/",
+      "note": "BABA放量大涨约11%，创去年9月以来最大单日涨幅。市场押注亏损收窄、AI云进展，资金从韩台芯片股回流被低估的中概科技，百度同涨约5%。"
+    },
+    {
+      "title": "亚马逊再发债250亿美元投AI，承诺为年内最后一次",
+      "source": "247WallSt",
+      "url": "https://247wallst.com/investing/2026/07/07/amazon-is-borrowing-another-25-billion-for-ai-and-promises-this-is-the-last-time-this-year/",
+      "note": "AWS增速重回28%、66位分析师中62位看多，市场将其巨额资本开支视为'有纪律的进攻'而非烧钱。AMZN将于7月30日发布Q2财报。"
+    },
+    {
+      "title": "Arista Networks大涨：入选罗素Top 50，AI网络需求成催化",
+      "source": "SimplyWall.st / MarketBeat",
+      "url": "https://simplywall.st/stocks/us/tech/nyse-anet/arista-networks/news/why-arista-networks-anet-is-up-87-after-joining-the-russell",
+      "note": "ANET盘中一度涨近9%，受益AI数据中心网络设备需求与指数纳入，Q2财报定于8月4日，卖方普遍上调目标价，共识均价约187美元。"
+    },
+    {
+      "title": "A股弱势整理：新能源、机器人板块领跌，科创半导体逆势收红",
+      "source": "东方财富 / 新浪财经",
+      "url": "https://cn.investing.com/markets/china",
+      "note": "7月8日收盘上证跌0.49%报3970、深成指跌1.87%、创业板跌1.70%；新能源车ETF跌5.23%、机器人跌4.49%、光伏跌3.26%，仅半导体设备(+2.7%)、银行、AI逆势走强，资金明显防御化。"
+    }
   ],
   "gainer_intros": {
-    "NET": "Cloudflare，边缘计算/网络安全龙头。今日+8.6%，因Scotiabank上调至跑赢、目标价升至$300，看好其在AI边缘推理流量中的卡位。",
-    "VG": "Venture Global，美国LNG液化天然气出口商。今日+6.8%，受美撤销伊朗售油许可、油气价格跳涨带动。",
-    "CTSH": "Cognizant，IT服务外包龙头。今日+6.2%，因深化Google Gemini合作、推进主权AI并自身部署10万员工，AI-first转型叙事获认可。",
-    "OXY": "Occidental Petroleum，美国页岩油巨头（巴菲特重仓）。今日+5.9%，油价因伊朗地缘跳涨直接受益。",
-    "HUBS": "HubSpot，中小企业营销/CRM SaaS。今日+5.9%，软件股在AI应用变现预期下反弹。",
-    "EQNR": "Equinor，挪威国家石油公司。今日+5.8%，油价跳涨带动欧洲能源股。",
-    "FIG": "Figma，协作设计软件平台。今日+5.3%，设计工具AI化的代表，软件板块情绪修复。",
-    "GILD": "Gilead Sciences，抗病毒/肿瘤生物药龙头。今日+5.2%，Trodelvy一线癌症获批+长效HIV三期成功+HSBC上调买入三喜齐至。"
+    "WULF": "TeraWulf，比特币矿企转型AI算力租赁；因与Anthropic签190亿美元、20年数据中心租约，从两日回调中反弹+12.8%。",
+    "BABA": "阿里巴巴，中国电商与云计算龙头；诉讼获暂时喘息叠加财报前乐观情绪，资金回流中概，单日大涨约11%。",
+    "NBIS": "Nebius，欧洲AI云/GPU算力供应商；随AI基建板块集体反弹走强，近6个月累涨超120%。",
+    "AKAM": "Akamai，CDN与边缘云安全厂商；受AI边缘计算与云安全需求预期带动，跟随科技反弹大涨。",
+    "HUT": "Hut 8，比特币矿商兼AI/HPC算力运营商；与WULF等同为AI算力租赁题材，随板块反弹近+10%。",
+    "ANET": "Arista Networks，数据中心高速以太网交换机龙头；入选罗素Top 50+AI网络需求驱动，盘中涨近9%。",
+    "IREN": "IREN，比特币挖矿与AI数据中心运营商；跟随TeraWulf-Anthropic大单情绪修复，反弹约+8%。",
+    "CRWV": "CoreWeave，专注GPU云的AI算力新贵；受AI基建整体回暖带动，跟随算力板块走高。"
   },
-  "amazon_commentary": "现价约$250，较5月高点$278回撤约10%，市场核心分歧仍是$2000亿AI capex能不能变成自由现金流。Q1数据其实很强——AWS +28%（15个季度最快）、run-rate冲上$150B、backlog $364B、整体营业利润率13.1%创历史新高——但TTM自由现金流被前置capex压到近乎归零，6月市场因此把股价压在中性位置。\n一个值得盯的结构性视角：拆开capex会发现AWS独吞约68%的资本开支，意味着FCF焦虑本质只关于AWS一个分部，而零售+广告两个高毛利引擎其实是净现金机器。若这个'连坐错杀'成立，预期差可能在被误伤的现金牛。7/30 Q2财报（指引营收$194-199B、营业利润$20-24B）是关键催化：重点看AWS增速能否守住25%+、分部margin能否守住35%（这是capex变现跟不跟得上折旧的生命线指标）。",
-  "siyuan_commentary": "今日盘中大跌约4.7%至166元，明显回调，已跌破公司此前回购价上限219元不少。年内高点239元、低点70元，当前处于高位回落后的震荡区间。短期A股电力设备板块整体走弱（电力ETF -2.2%），情绪偏谨慎。\n中期跟踪点不变：一看特高压/主网设备的订单节奏（国网投资兑现度），二看出海占比能否持续提升（海外高毛利订单是估值弹性来源），三看即将披露的中报在手订单与储能业务进展。当前PE已从高位回落，估值消化中，需等基本面（中报订单）验证增长的持续性再判断性价比。"
+  "amazon_commentary": "7月8日AMZN盘后报243.62美元，微跌0.96%，处于52周区间(196–278.56)约59%位置，较278美元高点回落约12%。当前PE约29倍、前瞻PE约29倍、市值2.62万亿美元——对一家AWS增速重回28%、并把大量自由现金流押注AI的巨头而言，估值并不算贵。\n本周核心叙事是资本开支纪律：公司再发债250亿美元投AI，并承诺是年内最后一次，管理层试图向市场证明其2000亿美元级资本开支是'需求驱动'而非盲目扩张。代价是自由现金流同比骤降约95%，这也是股价迟迟未能突破前高的主因。\n7月30日Q2财报是关键验证点。市场关注Prime Day增量、AWS能否维持28%高增速、以及资本开支是否见顶。66位分析师中62位看多、共识目标价约313美元(隐含约30%上行空间)；短期在油价与AI情绪扰动下震荡，中期逻辑仍锚定AWS的AI变现节奏。",
+  "siyuan_commentary": "思源电气(002028)7月8日收156.84元、重挫5.49%，盘中最高169.88元、最低156.58元几近收在全天低点，明显跑输大盘。当日并无公司层面利空消息，下跌主要源于A股新能源与电力设备板块的整体调整——同日新能源车ETF跌5.23%、光伏跌3.26%，资金从高估值成长股回流银行等防御板块，思源作为板块高β标的首当其冲。\n估值上，当前PE(TTM)约37.7倍、PB约7.6倍、PS约5.4倍，PEG约0.61，处于52周区间(69.92–239.12元)的中段偏下、较年内高点回撤约三成。基本面主线仍是特高压、电网设备国产化与海外出海(变压器/开关/储能)带来的订单弹性；短期股价随板块情绪波动放大，若季报能验证海外订单与储能放量的成长兑现，回调后的性价比值得跟踪，但需警惕高估值在市场防御化阶段的持续承压。"
 }
