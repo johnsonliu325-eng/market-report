@@ -1,53 +1,53 @@
 {
-  "generated_at": "2026-07-09 09:20 北京时间",
+  "generated_at": "2026-07-10 09:00 北京时间",
   "news": [
     {
-      "title": "美股收跌：油价因美伊紧张走高，AI/芯片担忧压制大盘",
-      "source": "Yahoo Finance",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-news-july-8-095100764.html",
-      "note": "7月8日纳指收跌1.16%至25,818，标普500跌0.45%至7,503，道指微跌0.25%。特朗普称对伊谈判'结束'推升原油，半导体承压，但AI基建与中概逆势走强。"
+      "title": "美光抛出 2500 亿美元 AI 投资计划，点燃全球芯片行情",
+      "source": "Reuters / Straits Times",
+      "url": "https://www.straitstimes.com/business/companies-markets/nasdaq-ends-sharply-higher-chip-surge-offsets-iran-worries",
+      "note": "今日中美半导体同步暴涨的总催化剂。美光 $250B AI 导向投资一出，费半 +3.06%、纳指 +1.30%，压过中东地缘担忧。存储/HBM 是这轮景气最硬的一环。"
     },
     {
-      "title": "TeraWulf飙升12.8%：Anthropic 190亿美元、20年AI数据中心租约点燃板块",
-      "source": "ts2.tech / 247WallSt",
-      "url": "https://247wallst.com/investing/2026/07/08/terawulf-rises-12-iren-climbs-7-as-ai-infrastructure-stocks-bounce-back/",
-      "note": "WULF收22.83美元、单日+12.8%，带动IREN+8%、CoreWeave、Hut8等AI算力/矿企集体反弹，从周二回调中修复。Bernstein维持Outperform、目标36美元。"
+      "title": "纳指深 V 反弹，中概资产隔夜狂飙，阿里巴巴单日 +11%",
+      "source": "Bitget News",
+      "url": "https://www.bitget.com/news/detail/12560605496466",
+      "note": "芯片行情把美伊冲突的利空吃掉，纳指走出深 V。风险偏好回归带动中概与 A 股半导体同步走强，是今日 A 股大涨的外部背景。"
     },
     {
-      "title": "阿里巴巴单日大涨11%：DOJ/五角大楼诉讼获喘息+财报前乐观情绪",
-      "source": "Bloomberg / MarketBeat",
-      "url": "https://www.marketbeat.com/instant-alerts/alibaba-group-nysebaba-trading-up-11-should-you-buy-2026-07-08/",
-      "note": "BABA放量大涨约11%，创去年9月以来最大单日涨幅。市场押注亏损收窄、AI云进展，资金从韩台芯片股回流被低估的中概科技，百度同涨约5%。"
+      "title": "A 股半导体集体走强，科创 50 单日 +8.4%、半导体 ETF +10.1%",
+      "source": "AAStocks / 东财",
+      "url": "http://www.aastocks.com/tc/stocks/analysis/stock-aafn-con/01347/GLH/GLH2464972L/hk-stock-news",
+      "note": "叠加华为半导体'韬定律'主题，寒武纪、兆易创新等创新高。这是一轮情绪与产业叙事共振的普涨，但半导体 ETF +10%，需防高位追涨。"
     },
     {
-      "title": "亚马逊再发债250亿美元投AI，承诺为年内最后一次",
-      "source": "247WallSt",
-      "url": "https://247wallst.com/investing/2026/07/07/amazon-is-borrowing-another-25-billion-for-ai-and-promises-this-is-the-last-time-this-year/",
-      "note": "AWS增速重回28%、66位分析师中62位看多，市场将其巨额资本开支视为'有纪律的进攻'而非烧钱。AMZN将于7月30日发布Q2财报。"
+      "title": "亚马逊获 BofA 上调目标价，$25B AI 债券融资引华尔街关注",
+      "source": "MarketBeat / ts2.tech",
+      "url": "https://ts2.tech/en/amazon-gets-wall-streets-attention-over-25b-ai-debt-move/",
+      "note": "AMZN +1.40% 至 247。发债为 capex 加杠杆，坐实'管理层继续加投、capex 未见顶'。真正的胜负手在 7/30 财报的 AWS 利润率，不是收入增速。"
     },
     {
-      "title": "Arista Networks大涨：入选罗素Top 50，AI网络需求成催化",
-      "source": "SimplyWall.st / MarketBeat",
-      "url": "https://simplywall.st/stocks/us/tech/nyse-anet/arista-networks/news/why-arista-networks-anet-is-up-87-after-joining-the-russell",
-      "note": "ANET盘中一度涨近9%，受益AI数据中心网络设备需求与指数纳入，Q2财报定于8月4日，卖方普遍上调目标价，共识均价约187美元。"
+      "title": "Claude Sonnet 5 登陆 AWS Bedrock，Anthropic 绑定深化",
+      "source": "AWS Blog",
+      "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-claude-sonnet-5-on-aws-amazon-workspaces-for-ai-agents-aws-service-availability-updates-and-more-july-6-2026/",
+      "note": "AWS 持有 Anthropic 股权价值已达约 $74B。前沿模型上 Bedrock + Trainium 训练订单，是 AWS 在推理时代的黏性抓手。"
     },
     {
-      "title": "A股弱势整理：新能源、机器人板块领跌，科创半导体逆势收红",
-      "source": "东方财富 / 新浪财经",
-      "url": "https://cn.investing.com/markets/china",
-      "note": "7月8日收盘上证跌0.49%报3970、深成指跌1.87%、创业板跌1.70%；新能源车ETF跌5.23%、机器人跌4.49%、光伏跌3.26%，仅半导体设备(+2.7%)、银行、AI逆势走强，资金明显防御化。"
+      "title": "思源电气披露分红：每 10 股派现金红利 7 元",
+      "source": "AAStocks 沪深港通",
+      "url": "https://www.aastocks.com/tc/cnhk/quote/stock-news-content/002028/GLH5212152N/GLH",
+      "note": "作为电力设备而非半导体，思源今日 +1.57% 跟涨但明显跑输普涨大盘（电力 ETF -0.09%）。分红体现现金流态度，但需留意 2025 利润与经营现金流背离。"
     }
   ],
   "gainer_intros": {
-    "WULF": "TeraWulf，比特币矿企转型AI算力租赁；因与Anthropic签190亿美元、20年数据中心租约，从两日回调中反弹+12.8%。",
-    "BABA": "阿里巴巴，中国电商与云计算龙头；诉讼获暂时喘息叠加财报前乐观情绪，资金回流中概，单日大涨约11%。",
-    "NBIS": "Nebius，欧洲AI云/GPU算力供应商；随AI基建板块集体反弹走强，近6个月累涨超120%。",
-    "AKAM": "Akamai，CDN与边缘云安全厂商；受AI边缘计算与云安全需求预期带动，跟随科技反弹大涨。",
-    "HUT": "Hut 8，比特币矿商兼AI/HPC算力运营商；与WULF等同为AI算力租赁题材，随板块反弹近+10%。",
-    "ANET": "Arista Networks，数据中心高速以太网交换机龙头；入选罗素Top 50+AI网络需求驱动，盘中涨近9%。",
-    "IREN": "IREN，比特币挖矿与AI数据中心运营商；跟随TeraWulf-Anthropic大单情绪修复，反弹约+8%。",
-    "CRWV": "CoreWeave，专注GPU云的AI算力新贵；受AI基建整体回暖带动，跟随算力板块走高。"
+    "BBIO": "BridgeBio Pharma，罕见病创新药企；今日 +15% 主要受生物科技板块反弹与管线催化驱动，非半导体主线。",
+    "ALGM": "Allegro MicroSystems，车用与工业传感器芯片；+11% 受美光 AI 投资点燃的半导体全面反弹带动。",
+    "LITE": "Lumentum，光通信与激光器件龙头；+11% 是 AI 数据中心光模块需求的核心受益，芯片行情中的高弹性品种。",
+    "HPE": "慧与科技，企业级服务器与 AI 服务器供应商；+10% 受 AI 基础设施采购与算力需求预期推动。",
+    "CBRS": "Cerebras Systems，晶圆级 AI 芯片厂商，挑战英伟达；+9% 是今日 AI 算力叙事的旗手之一。",
+    "ARM": "Arm Holdings，芯片 IP 授权巨头，AI 芯片架构核心；+9% 领涨但估值极高（PE 387），纯情绪/预期驱动，追高风险大。",
+    "ONTO": "Onto Innovation，半导体量测设备商；+9% 受先进封装与 HBM 检测需求带动，与存储景气同源。",
+    "RIVN": "Rivian，电动车新势力；+9% 属风险偏好回归下的高 beta 成长股补涨，与半导体主线关联弱。"
   },
-  "amazon_commentary": "7月8日AMZN盘后报243.62美元，微跌0.96%，处于52周区间(196–278.56)约59%位置，较278美元高点回落约12%。当前PE约29倍、前瞻PE约29倍、市值2.62万亿美元——对一家AWS增速重回28%、并把大量自由现金流押注AI的巨头而言，估值并不算贵。\n本周核心叙事是资本开支纪律：公司再发债250亿美元投AI，并承诺是年内最后一次，管理层试图向市场证明其2000亿美元级资本开支是'需求驱动'而非盲目扩张。代价是自由现金流同比骤降约95%，这也是股价迟迟未能突破前高的主因。\n7月30日Q2财报是关键验证点。市场关注Prime Day增量、AWS能否维持28%高增速、以及资本开支是否见顶。66位分析师中62位看多、共识目标价约313美元(隐含约30%上行空间)；短期在油价与AI情绪扰动下震荡，中期逻辑仍锚定AWS的AI变现节奏。",
-  "siyuan_commentary": "思源电气(002028)7月8日收156.84元、重挫5.49%，盘中最高169.88元、最低156.58元几近收在全天低点，明显跑输大盘。当日并无公司层面利空消息，下跌主要源于A股新能源与电力设备板块的整体调整——同日新能源车ETF跌5.23%、光伏跌3.26%，资金从高估值成长股回流银行等防御板块，思源作为板块高β标的首当其冲。\n估值上，当前PE(TTM)约37.7倍、PB约7.6倍、PS约5.4倍，PEG约0.61，处于52周区间(69.92–239.12元)的中段偏下、较年内高点回撤约三成。基本面主线仍是特高压、电网设备国产化与海外出海(变压器/开关/储能)带来的订单弹性；短期股价随板块情绪波动放大，若季报能验证海外订单与储能放量的成长兑现，回调后的性价比值得跟踪，但需警惕高估值在市场防御化阶段的持续承压。"
+  "amazon_commentary": "亚马逊 7/9 收盘 +1.40% 至 247.04，处于 52 周区间 62% 位置，距 5 月高点 278.56 还有约 12% 空间。今日上涨主要由卖方情绪驱动——BofA 上调目标价并重申买入，BNP、Needham 亦指向估值吸引，而非基本面新增量。估值上 PE(TTM) 29.5、前瞻 29.3，毛利率 50.6%、ROE 24.28%，质量在线但不便宜。\n真正值得记的是 $25B 的 AI 债券融资：这是管理层用发债为 capex 加杠杆，直接坐实了'资本开支未见顶、有机会就继续加投'的判断。叠加 Claude Sonnet 5 上线 Bedrock、AWS 持有 Anthropic 股权已达约 $74B，AWS 在推理时代的黏性还在强化。\n观点：现价已处于我们 DCF 基准区间上沿，市场 price in 了偏乐观的假设。核心胜负手仍是 7/30 财报的 AWS 利润率（Q1 为 37.7%，同比降 1.8pct）能否守住——它等价于'Trainium 剥英伟达毛利'的成色，而非收入增速。今天的上涨是情绪与叙事，不是新的基本面，追高性价比一般。",
+  "siyuan_commentary": "思源电气 7/9 收盘 159.30，+1.57%，但在 A 股普涨（沪深300 +2.54%、科创50 +8.41%）中明显跑输——因为它是电力设备而非今日主线半导体，电力 ETF 当日仅 -0.09%。当前 PE(TTM) 38.3、PB 7.73、PS 5.45，PEG 0.62；现价距 52 周高点 239.12 已回撤约 33%，距低点 69.92 仍有翻倍以上涨幅，说明去年高增长预期正在消化。\n公司质量与估值的矛盾依旧：2025 营收/净利高增、海外与储能是主引擎，但利润与经营现金流背离、护城河（专利/客户绑定）在公开源难以证实。今日刚披露每 10 股派 7 元分红，是正向信号。对持有者而言，它更像一个'好公司、贵估值、且高度依赖增长兑现'的标的——在半导体虹吸市场资金的日子里，这类高估值成长股容易被冷落，需以基本面兑现而非情绪来定去留。"
 }

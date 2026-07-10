@@ -2,18 +2,27 @@
 """Top gainers 取数：拉 Nasdaq + NYSE 大中盘股，本地按涨跌幅排序。
 只保留有市值意义的公司（过滤仙股），返回涨幅榜。
 """
-import urllib.request, json
+import urllib.request, json, ssl
 
 UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36"
 
 
+def _ssl_ctx():
+    try:
+        import certifi
+        return ssl.create_default_context(cafile=certifi.where())
+    except Exception:
+        return ssl.create_default_context()
+
+
 def _get(url, retries=3):
     import time
+    ctx = _ssl_ctx()
     last = None
     for i in range(retries):
         try:
             req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "application/json"})
-            with urllib.request.urlopen(req, timeout=20) as r:
+            with urllib.request.urlopen(req, timeout=20, context=ctx) as r:
                 return json.loads(r.read().decode("utf-8", "ignore"))
         except Exception as e:
             last = e
