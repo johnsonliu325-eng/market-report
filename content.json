@@ -1,53 +1,53 @@
 {
-  "generated_at": "2026-07-22 08:50 北京时间",
+  "generated_at": "2026-07-24 08:50 北京时间",
   "news": [
     {
-      "title": "存储芯片引爆美股：美光暴涨约12%，大摩喊出存储价格Q3再涨25%",
-      "source": "The Motley Fool / TradingKey",
-      "url": "https://www.fool.com/investing/2026/07/21/memory-stocks-spark-a-market-rebound/",
-      "note": "摩根士丹利预测AI需求驱动存储价格Q3还能再涨25%，美光、西部数据、闪迪、SK海力士全线两位数反攻，三大行齐喊买入，成为7/21全场主线。"
-    },
-    {
-      "title": "美光获美银列为首选、看83%上行空间：HBM已售罄至2026年底",
-      "source": "Startup Fortune",
-      "url": "https://startupfortune.com/micron-stock-jumps-12-as-bank-of-america-bets-on-an-83-rally/",
-      "note": "美银点名美光为顶级标的、目标价隐含83%上行，理由是高带宽内存(HBM)产能已售罄至今年底——存储供不应求逻辑正在被主流投行确认。"
-    },
-    {
-      "title": "英伟达披露持有Nebius 9.3%股权，NBIS收涨18.78%",
+      "title": "特斯拉财报暴雷单日崩14.5%、Alphabet跌7.1%，AI资本开支恐慌重创科技股",
       "source": "CNBC",
-      "url": "https://www.cnbc.com/2026/07/21/nebius-stock-nvidia-stake-neocloud.html",
-      "note": "英伟达通过13G文件披露对新云(neocloud)厂商Nebius的9.3%被动持股，带动CoreWeave、Oracle等AI云算力链集体走强，AI基础设施叙事延续。"
+      "url": "https://www.cnbc.com/2026/07/23/tesla-tsla-alphabet-googl-stock-today.html",
+      "note": "7/22盘后特斯拉Q2调整后EPS仅0.33美元远逊预期0.50，营业利润骤降57%、营业利润率塌到1.4%；叠加Alphabet虽EPS超预期但资本开支猛增，两巨头7/23合计蒸发数千亿美元市值，'AI烧钱换不来利润'成新的市场心结。"
     },
     {
-      "title": "Bloom Energy拿下17亿美元AI供电大单，盘中大涨约15%",
-      "source": "GuruFocus",
-      "url": "https://www.gurufocus.com/news/8969863/bloom-energy-be-stock-surges-15-on-17-billion-investment-for-ai-power-solutions",
-      "note": "燃料电池厂商Bloom Energy获17亿美元投资、为AI云计算提供专属电力，AI算力→电力设备的传导逻辑正在美股兑现，可对照A股电力设备板块看。"
+      "title": "洛马Q2利润大超预期上调全年指引，股价飙10.5%创25年来最佳单日",
+      "source": "MarketWatch / Morningstar",
+      "url": "https://kessler-prod.reta52d8.eas.morningstar.com/news/marketwatch/20260723165/lockheed-martins-stock-has-best-day-in-25-years-as-push-to-build-more-missiles-faster-pays-off",
+      "note": "洛克希德·马丁Q2 EPS 7.94美元(预期7.23)、营收200亿美元创纪录订单簿，全球防务景气+导弹产能扩张兑现，录得自2001年9月以来最强单日；在科技股杀跌日成资金避风港。"
     },
     {
-      "title": "A股科创50单日涨超10%，刷新年内最大涨幅；半导体设备ETF暴涨19%",
-      "source": "深潮TechFlow",
-      "url": "https://www.techflowpost.com/newsletter/128991",
-      "note": "格科微、华虹宏力、中科飞测均20cm涨停，科创半导体设备ETF+19.22%、科创芯片设计ETF+11.75%，A股与美股存储/芯片行情形成共振，日经225同步大涨3.26%。"
+      "title": "赛默飞Q2营收增10%上调全年指引，盘中一度涨9%领衔医药股",
+      "source": "GenomeWeb",
+      "url": "https://www.genomeweb.com/business-news/thermo-fisher-stock-surges-firm-raises-full-year-guidance-strong-q2-results",
+      "note": "赛默飞(TMO)营收119.9亿、调整后EPS 6.03美元双超预期并上调指引，带动丹纳赫、Quest、argenx等医药医械集体大涨；生命科学工具需求回暖，是7/23防御板块领涨的核心线索。"
     },
     {
-      "title": "本周科技财报周开锣：特斯拉、Alphabet 7/22盘后打头阵，亚马逊7/30压轴",
-      "source": "MarketBeat / Investing.com",
-      "url": "https://www.investing.com/news/stock-market-news/amazon-growth-catalysts-aws-project-kuiper-and-the-jul-30-earnings-setup-93CH-4801540",
-      "note": "特斯拉、Alphabet均定于美东7/22盘后发布Q2业绩，期权市场为特斯拉定价约8%波动；亚马逊7/30压轴，Q2营收指引1940-1990亿美元，AWS为最大看点。"
+      "title": "联合租赁Q2业绩+指引双超预期、股价跳涨12%，工业设备景气延续",
+      "source": "StockStory",
+      "url": "https://markets.financialcontent.com/wral/article/stockstory-2026-7-23-why-is-united-rentals-uri-stock-rocketing-higher-today",
+      "note": "URI二季度营收利润双beat并上调全年指引，两周内股价从约1012美元冲到1140美元；设备租赁是基建与数据中心建设的晴雨表，与AI算力→电力→基建的实体传导链相互印证。"
+    },
+    {
+      "title": "CRO龙头Medpace暴涨14.7%创新高：Q2订单激增28%、上调全年指引",
+      "source": "MarketBeat",
+      "url": "https://www.marketbeat.com/instant-alerts/medpace-nasdaqmedp-hits-new-52-week-high-after-better-than-expected-earnings-2026-07-23/",
+      "note": "临床研究外包(CRO)龙头Medpace净新签订单同比增28.2%至7.96亿美元、订单出货比1.13倍，全年EPS指引上调至17.25-17.95美元，创新药研发外包需求强劲，是7/23美股涨幅榜头名。"
+    },
+    {
+      "title": "A股高低切换延续：科创50重挫3.78%、新能源车ETF+3.61%领涨；长鑫科技7/27科创板上市",
+      "source": "深潮TechFlow / Odaily",
+      "url": "https://www.odaily.news/en/newsflash/503218",
+      "note": "7/23沪指微涨0.25%、深成指+0.44%，但科创50跌3.78%、科创芯片ETF-3.99%高位调整；资金转向新能源车(+3.61%)、半导体(中韩+3.11%)、券商(+2.1%)。存储龙头长鑫科技将于7/27登陆科创板，或再度点燃存储链情绪。"
     }
   ],
   "gainer_intros": {
-    "NBIS": "Nebius，源自Yandex的AI云算力(neocloud)服务商，今日因英伟达披露持有其9.3%股权大涨18.78%，成为AI基础设施最亮眼标的。",
-    "CBRS": "Cerebras，晶圆级AI推理芯片厂商，主打超大单片芯片对抗GPU，随存储与AI算力板块情绪走强跟涨约18%。",
-    "BE": "Bloom Energy，固体氧化物燃料电池厂商，今日宣布获17亿美元投资为AI数据中心供电，AI用电缺口逻辑点燃股价大涨约15%。",
-    "DOCN": "DigitalOcean，面向中小开发者的云服务商，近期发力AI推理云与GPU租赁，随AI云板块情绪回暖上涨约14.6%。",
-    "SNDK": "SanDisk(闪迪)，从西部数据分拆的NAND闪存龙头，受存储涨价与需求回暖预期驱动大涨约14%。",
-    "SKHY": "SK海力士(美国存托凭证)，全球HBM与DRAM龙头，7月29日将发财报，市场提前抢跑推动股价大涨约14%。",
-    "WDC": "西部数据，HDD硬盘与企业级存储龙头，受益AI数据中心存储扩容与涨价预期，跟随存储链大涨约12.5%。",
-    "MU": "美光科技，美国唯一大型存储芯片厂，今日因美银列为首选(看83%上行)、大摩预测存储价格Q3再涨25%而暴涨约12%，是本轮反攻的核心引擎。"
+    "MEDP": "Medpace，临床研究外包(CRO)龙头，为药企做新药试验；Q2净新签订单激增28%、上调全年指引，股价暴涨14.7%创52周新高。",
+    "LMT": "洛克希德·马丁，美国最大防务承包商(F-35战机/导弹)；Q2利润大超预期、订单簿创纪录并上调指引，飙涨10.5%创25年最佳单日。",
+    "ALLE": "Allegion，全球门禁与安防锁具制造商；Q2营收增12.7%、EPS增17.6%并加码5亿美元回购，业绩超预期跳涨。",
+    "URI": "United Rentals，北美最大工程设备租赁商；Q2营收利润双超预期并上调全年指引，受益基建与数据中心建设景气，涨超10%。",
+    "TMO": "赛默飞世尔，全球生命科学仪器与试剂巨头；Q2营收增10%、上调全年指引，生命科学工具需求回暖带动股价大涨。",
+    "DGX": "Quest Diagnostics，美国最大医学诊断检测服务商；搭乘医药板块财报季景气与自身业绩，跟随大涨。",
+    "ARGX": "argenx，比利时自免疫抗体药企(重磅药Vyvgart)；受医药板块整体情绪与业绩预期驱动大涨。",
+    "DHR": "丹纳赫，多元化生命科学与诊断集团(旗下Cytiva等)；随赛默飞财报利好、生命科学复苏预期共振走高。"
   },
-  "amazon_commentary": "亚马逊(AMZN)在7/21这轮存储与AI算力行情中相对平淡，收在246美元附近，静待7/30盘后的Q2财报。市场此前给出的Q2营收指引区间为1940-1990亿美元，上一季AWS录得约28%的15个季度最快增速，构成本次财报最核心的看点。花旗等机构预计营收将落在指引高端，多家投行维持“强力买入”、给出约321美元目标价、隐含约30%上行空间，逻辑落在AWS积压订单充裕、云需求强劲，以及有真实客户合约背书的大规模AI投资。\n本周科技财报密集：特斯拉、Alphabet于美东7/22盘后先行，若云与AI资本开支指引积极，将为亚马逊7/30的表现提供情绪与预期锚定。当前29倍出头的PE对超大市值科技股不算贵，AWS增速能否延续加速、以及AI投入对利润率的短期拖累，是决定财报后方向的两大变量。对追踪者而言，7/22-7/23的特斯拉/Alphabet财报可作为AWS与广告景气的先行读数，再决定是否在7/30前布局。",
-  "siyuan_commentary": "思源电气(002028)前一交易日收于155.89元、涨2.90%，市值约1220亿元，全天在151-156.5元区间震荡收高。当前动态PE(TTM)约36.5倍、PB约7.6倍，处于年内69.92-239.12元大区间的中下沿附近，估值较年内高点已明显回落，PEG约0.59显示相对成长性仍具性价比。在7/21这轮以半导体存储、AI算力为主线的行情里，电力设备板块同样涨幅居前——AI数据中心的用电与配电需求（对应美股Bloom Energy拿下17亿美元AI供电大单的逻辑）正成为电力设备的新增长叙事，思源作为特高压开关、组合电器与储能PCS供应商直接受益。\n跟踪要点：一是海外订单，公司出海(中东、拉美、欧洲电网)持续放量，是近两年业绩与估值的主要支撑；二是即将披露的半年报能否验证收入与新增订单的高增长；三是国内特高压新一轮核准与AI数据中心配电需求的边际拉动。短期股价随大盘科技情绪波动，但AI用电+电网出海的中长期逻辑未变，回调至估值中枢附近可作为追踪者关注区间，需留意半年报兑现度与板块高低切换带来的波动。"
+  "amazon_commentary": "7/23对科技股是残酷的一天——特斯拉盘后暴雷崩14.5%、Alphabet虽超预期却因资本开支猛增被砍7.1%，市场对'AI烧钱换不来利润'的疑虑集中爆发。这直接抬高了7/30盘后亚马逊Q2财报的门槛：市场目前预期EPS约1.82美元(去年同期1.68)、营收约1967亿美元，真正的胜负手在AWS增速和2000亿美元资本开支的兑现节奏。\n偏乐观的一面是，多家投行在财报前继续加码。美银重申买入、目标价310美元，认为AWS加速快于市场预期；有顶级分析师把AWS增速预期上修至同比33%，理由是Anthropic相关算力贡献增强，并把营收看到1988亿美元、EBIT 24.1亿美元均高于共识。Morningstar则提醒关注两点：亚马逊能否守住2000亿美元全年资本开支目标，以及只给单季指引带来的能见度局限。\n结合特斯拉/Alphabet的前车之鉴，亚马逊这份财报的关键不在于收入超没超预期，而在于能否证明'重资本投入正在转化为AWS加速+利润率扩张'。若AWS增速站上30%以上且利润率不塌，AMZN有望与遭错杀的同行拉开身位；反之，在当前AI资本开支恐慌的情绪下，任何指引含糊都可能被放大成杀估值的理由。追踪者宜等财报落地再做判断，不必在恐慌情绪里抢跑。",
+  "siyuan_commentary": "思源电气7/23放量大涨6.7%收164.6元，在当日科创50大跌3.78%、AI/半导体高位调整的背景下逆势走强，凸显电力设备板块作为'AI算力→电力→电网'实体传导链的独立逻辑。这条链在美股同样被反复验证：Bloom Energy拿AI供电大单、United Rentals受益数据中心建设景气，海外资金正把AI叙事从芯片外溢到供电与基建端，思源作为特高压、储能、海外电网出海的核心标的直接受益。\n估值上，当前PE(TTM)约38.5倍、PB约8.0倍、PS约5.4倍，PEG约0.63，年内股价区间74.5-239.1元、现价处于中枢偏下。近38倍PE对电力设备而言不算便宜，反映市场对特高压订单、储能放量与海外收入占比提升的高预期。目前公司半年报业绩尚未正式披露，是这波行情能否延续的最大变量——建议紧盯即将到来的中报订单与出海收入数据：若特高压/储能订单和海外营收占比继续兑现高增长，当前估值有支撑；若增速不及预期，8倍PB的高位需警惕获利回吐。"
 }
