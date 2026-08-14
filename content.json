@@ -1,53 +1,47 @@
 {
-  "generated_at": "2026-08-13 09:30 北京时间",
+  "generated_at": "2026-08-14 09:45 北京时间",
   "news": [
     {
-      "title": "7月CPI符合预期同比降至3.4%，'第六次暂停'预期升温，标普守稳纪录高位",
-      "source": "CNBC / Kiplinger",
-      "url": "https://www.cnbc.com/amp/2026/08/11/stock-market-today-live-updates.html",
-      "note": "7月CPI同比3.4%（前值3.5%）为3月以来最慢，环比+0.1%、核心+0.2%均符合预期，缓解了'提前加息'担忧——市场博弈的是主席Warsh 9月加不加息（当前联邦基金利率3.50-3.75%），温和读数把加息风险压下、'第六次政策暂停'概率上升；标普+0.26%收7748.50、纳指+0.54%收26588.49、道指微跌，指数分化但科技/AI扛旗。"
+      "title": "7月PPI环比持平，加息预期再降温，标普500续创纪录收盘新高",
+      "source": "CNBC / Investing.com",
+      "url": "https://www.cnbc.com/2026/08/12/stock-market-today-live-updates.html",
+      "note": "美国7月PPI环比持平、核心PPI+0.2%，批发端通胀降温，继前一日温和CPI后进一步压低'提前加息'风险（当前联邦基金利率仍3.50-3.75%，市场博弈的是主席Warsh 9月加不加息）；标普500盘中首破7800、录得约7799的收盘纪录高位，纳指+0.81%收26803、道指+0.1%收53840（思科Cisco财报限制道指涨幅）。科技/软件股扛旗。"
     },
     {
-      "title": "Neocloud财报炸场：CoreWeave营收翻倍、Nebius暴增454%，AI算力需求'真金白银'兑现",
-      "source": "CNBC",
-      "url": "https://www.cnbc.com/2026/08/12/coreweave-q2-earnings-ai-demand.html",
-      "note": "CoreWeave Q2营收26亿+112%、积压订单破1040亿美元，股价+19%；Nebius营收5.82亿+454%（AI云占比98%、+514%）、剩余履约义务约370亿美元，股价+34%领涨。两家新云龙头同日爆发，标志市场对'neocloud'情绪彻底转多，AI资本开支主线从芯片外溢到云与光互连全链条。"
+      "title": "Workday传Silver Lake洽购，创十年来最大单日涨幅",
+      "source": "CNBC / Morningstar",
+      "url": "https://www.cnbc.com/2026/08/13/workday-skyrockets-25percent-before-trading-halted-on-report-of-silver-lake-takeover.html",
+      "note": "路透报道私募巨头Silver Lake正洽谈收购HR软件龙头Workday，盘中一度暴涨30%并触发波动性熔断，收涨约18%创2016年来最大单日涨幅、亦为有记录以来最大涨幅。叠加此前市场担忧'AI取代SaaS'压制估值，本次并购传闻+FedRAMP+AI指引上调三重催化，点燃整个企业软件板块。"
     },
     {
-      "title": "Lumentum光模块营收翻倍+超预期指引，光通信板块集体走强",
-      "source": "Yahoo Finance / 24/7 Wall St.",
-      "url": "https://finance.yahoo.com/technology/ai/articles/lite-q4-earnings-beat-ai-154200375.html",
-      "note": "Lumentum财季营收10.1亿美元+109%、开始出货1.6T光模块，管理层称2027需求'极其强劲'，股价+13.6%；带动Coherent+9%、康宁+5%。AI数据中心对高速光互连的需求是本轮neocloud读数最直接的受益环节，验证'算力→光模块'传导。"
+      "title": "SaaS板块集体反攻：HubSpot财报超预期、JFrog/Figma加速，AI叙事从算力外溢至软件层",
+      "source": "Zacks / Yahoo Finance",
+      "url": "https://finance.yahoo.com/technology/ai/articles/jfrog-says-ai-software-boom-020404136.html",
+      "note": "HubSpot Q2营收9.117亿+20%、非GAAP EPS 3.26碾压预期、经营利润+44%，此前一周杀跌11%后强反弹+14%；JFrog Q2营收+29%、云收入+53%被多家上调目标价+10.6%；Figma连三季加速营收3.70亿+48%、NDR 136%+11%。DocuSign/GoDaddy/Rubrik同步走强，映射资金从纯算力向软件/安全/观测层轮动。"
     },
     {
-      "title": "Bloom Energy获摩根大通上调目标价至346美元，AI供电燃料电池逻辑发酵",
-      "source": "Blockonomi",
-      "url": "https://blockonomi.com/bloom-energy-be-stock-rockets-15-following-jpmorgans-346-price-target-upgrade/",
-      "note": "摩根大通分析师将Bloom Energy目标价由267上调至346、维持增持，股价+12%。核心逻辑是AI数据中心用电激增下的分布式发电/燃料电池需求——与思源电气代表的'算力→电力'主线同源，海外正为AI供电付溢价。"
+      "title": "Sandisk AI闪存新技术+合作催化，近月从约998飙至1556美元",
+      "source": "Timothy Sykes",
+      "url": "https://www.timothysykes.com/news/sandisk-corporation-sndk-news-2026_08_13/",
+      "note": "存储龙头Sandisk受AI闪存新技术与合作消息带动+13.67%，7/29低点约998美元到8/13约1556美元的凌厉趋势行情，验证AI数据中心对高速存储（NAND/HBM链）的需求外溢，与SK海力士Q2营业利润+557%同源，存储景气延续。"
     },
     {
-      "title": "Quantinuum上市首份财报超预期，营收+279%、上调全年指引并牵手Oracle",
-      "source": "Yahoo Finance / Blockonomi",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/quantinuum-shares-rise-q2-revenue-181747662.html",
-      "note": "量子计算龙头Quantinuum Q2营收800万美元+279%、全年指引高于预期，并公布与Oracle的合作，作为公开上市后首份财报大超预期，股价+28%。量子叙事随AI景气一并升温，但收入体量仍小，属高波动主题。"
-    },
-    {
-      "title": "A股8/12午盘走强：科创50+1.61%、创业板+1.49%，半导体设备领涨，中报密集披露成分水岭",
+      "title": "A股8/14早盘成长风格占优：芯片+1.41%、AI+1.44%领涨，电力/医药回调",
       "source": "综合行情数据",
-      "url": "https://www.okx.com/en-us/orbit/insight/84461220015936",
-      "note": "深证成指+1.09%收14414、创业板+1.49%收3602、科创50+1.61%、中证500+0.98%，成长风格回暖与海外AI景气同频；科创半导体设备ETF+1.94%、光伏ETF+1.58%领涨，创新药/医药/机器人小幅回调。8月中报密集披露，成长兑现度成资金分水岭。"
+      "url": "http://quote.cfi.cn/quote2072_002028.html",
+      "note": "创业板指+0.92%收3619、科创50+0.81%、深成指+0.52%，沪指微跌0.09%收3923，成长风格与海外软件/科技反攻同频；科创芯片ETF+1.41%、创业板AI ETF+1.44%、半导体ETF+1.29%领涨，电力ETF-1.78%、港股创新药-1.71%、恒生医药-1.38%回调，8月中报密集披露成资金分水岭。"
     }
   ],
   "gainer_intros": {
-    "NBIS": "Nebius，Nasdaq上市的AI云（neocloud）新贵，Q2营收暴增454%至5.82亿美元、AI云占比98%、剩余履约义务约370亿美元，需求'真金白银'兑现，股价领涨+34%",
-    "QNT": "Quantinuum，量子计算龙头，上市后首份财报营收+279%、上调全年指引并牵手Oracle超预期，量子叙事随AI景气升温大涨+28%",
-    "CRWV": "CoreWeave，AI算力租赁新云龙头，Q2营收翻倍至26亿、积压订单破1040亿美元，超大规模客户需求爆表带动+19%",
-    "SMCI": "Super Micro，AI服务器/液冷整机龙头，财季业绩与展望超预期、AI服务器出货强劲，随neocloud读数+19%",
-    "SMCIP": "Super Micro优先股（存托凭证），跟随正股Super Micro财报超预期同步走强+16%",
-    "LITE": "Lumentum，AI数据中心光模块/激光器龙头，财季营收翻倍+109%至10.1亿、开始出货1.6T光模块并给出强劲2027指引，+13.6%",
-    "BE": "Bloom Energy，固体氧化物燃料电池发电龙头，摩根大通上调目标价至346美元，AI数据中心分布式供电逻辑发酵+12%",
-    "VIAV": "Viavi Solutions，光通信测试与网络仪器厂商，受益AI光互连高景气与光通信板块read-through，随Lumentum等走强+12%"
+    "WDAY": "Workday，HR/财务云软件龙头，传私募Silver Lake洽购触发盘中30%暴涨并熔断、收涨约18%创十年最大单日涨幅，叠加AI指引上调与FedRAMP利好点燃SaaS板块",
+    "HUBS": "HubSpot，营销/CRM云平台，Q2营收9.117亿+20%、非GAAP EPS 3.26大超预期、经营利润+44%，此前一周杀跌11%后强势反弹+14.5%",
+    "SNDK": "Sandisk，闪存/存储龙头，AI闪存新技术与合作消息催化，近月从约998飙至约1556美元，受益AI数据中心存储需求外溢+13.7%",
+    "FIG": "Figma，云端协作设计平台，Q2营收3.70亿+48%连三季加速、净收入留存率136%，AI功能变现强劲+11%",
+    "FROG": "JFrog，软件供应链/DevOps平台，Q2营收+29%、云收入+53%全面超预期，多家分析师上调目标价+10.6%",
+    "DOCU": "DocuSign，电子签名/合同管理龙头，随SaaS板块整体反攻与空头回补上涨+10.3%",
+    "GDDY": "GoDaddy，域名注册/建站与小微企业服务商，市场重估其强劲现金流与AI功能渗透，随软件基建板块走强+9.5%",
+    "RBRK": "Rubrik，数据安全/备份恢复龙头，AI Agent身份管控叙事叠加网络安全板块轮动，续涨+8.6%"
   },
-  "amazon_commentary": "8/12美股在温和CPI+neocloud财报双重催化下守稳纪录高位，Amazon截至最新报约232美元，59-60位分析师共识评级为'强力买入'，平均目标价约322-325美元（区间250-400），隐含约20%上行；近期BofA/DBS给320-332、高盛重申买入并给375、Truist维持320目标，华尔街对AWS加速的信任票仍在。\n本轮CoreWeave营收翻倍、Nebius暴增454%、Lumentum光模块翻倍的集中兑现，直接印证了AWS所处的AI算力需求端仍在加速——这对Amazon是最好的行业读数：Q2 AWS重回37%增速、单季capex高达542亿美元（+68%）、全年上修至约2200亿美元，供给端的疯狂扩张正被需求端的真实订单接住。\n但硬币另一面是自由现金流承压——巨额capex令FCF出现约258亿美元的负向摆动、市值一度跌破3万亿，估值分歧主要就在'capex侵蚀FCF能否被云增长兑现'。策略上仍以逢回调分批为主，重点盯后续capex节奏与AWS增速是否延续，用neocloud的景气外溢作为需求侧的持续验证。",
-  "siyuan_commentary": "思源电气8/12收165.89元、涨1.82%，振幅162.01-166.99元，成交约11.1亿、换手1.1%，市值约1298亿，PE(TTM)38.8、PB8.05、PS5.44、PEG0.63，年内高239低75、处中枢震荡区间。当日随创业板/科创成长风格回暖同步走强，在A股午盘半导体设备领涨、成长情绪修复中录得相对韧性。\n海外这一晚是'算力→电力/能源'主线的强验证：Bloom Energy因AI数据中心供电逻辑被摩根大通上调目标价+12%，Lumentum光模块翻倍、CoreWeave/Nebius算力需求爆发，共同指向AI基础设施建设对供电、并网、输变电环节的真实拉动。思源的特高压GIS、变压器、储能与出海业务是国内最直接对标的标的——外有海外AI供电与电网投资溢价、内有国网'十五五'超4万亿（约40%投资增量）托底，双轮驱动逻辑清晰。8月中报窗口以海外订单、储能出海毛利与兑现度为锚，逢回调分批、不追高，留意成长风格情绪波动带来的扰动。"
+  "amazon_commentary": "8/13美股在温和CPI+持平PPI双重利好、加息预期降温下，标普500续创纪录、科技软件股扛旗。Amazon截至最新约232美元，59-62位分析师共识评级仍为'强力买入'、无一给出卖出，平均目标价约322-353美元（区间250-400），隐含约20%-32%上行；近期Roth上调至325、Seeking Alpha将合理价值上修至350、24/7 Wall St.模型给353，华尔街对AWS加速的信任票延续。\n本轮催化虽集中在企业软件（Workday并购传闻、HubSpot/JFrog/Figma财报），但AI叙事从纯算力向软件/观测/安全层外溢，本质是AI应用渗透加深——这对AWS是需求侧的正向读数：Q2 AWS重回37%增速、单季capex高达542亿美元（+68%）、全年上修至约2200亿美元，供给端扩张正被真实需求接住。\n分歧仍在自由现金流：巨额capex令FCF出现约258亿美元负向摆动、市值一度跌破3万亿，估值博弈聚焦'capex侵蚀FCF能否被云增长兑现'。策略上以逢回调分批为主，盯后续capex节奏与AWS增速延续性，用软件/存储景气外溢作为AI需求持续验证。",
+  "siyuan_commentary": "思源电气8/14早盘约167.30元、微跌0.17%，开166.44、盘中高168.24低165.75，成交约1.44亿（早盘），市值约1309亿，PE(TTM)39.15、PB8.12、PS5.49、PEG0.64，年内高239低75、处中枢震荡区间。当日A股成长风格占优、芯片/AI领涨，但电力ETF-1.78%回调，思源相对抗跌、在电力板块弱势中显韧性。\n海外这一晚主线切向企业软件（Workday并购、HubSpot/JFrog财报），电力/能源直接催化偏淡，但'算力→电力'的中期逻辑未变：AI数据中心用电、并网、输变电的真实需求仍是思源特高压GIS、变压器、储能与出海业务的核心支撑。内有国网'十五五'超4万亿（约40%投资增量）托底，外有海外AI供电与电网投资溢价，双轮驱动逻辑清晰。8月中报窗口以海外订单、储能出海毛利与兑现度为锚——今日电力板块回调、成长资金短线偏向芯片/软件，思源逢回调分批、不追高，留意中报兑现度与板块轮动扰动。"
 }
