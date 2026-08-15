@@ -1,47 +1,79 @@
 {
-  "generated_at": "2026-08-14 09:45 北京时间",
+  "generated_at": "2026-08-15 09:30 北京时间（周末版·美股参照8/14收盘）",
   "news": [
     {
-      "title": "7月PPI环比持平，加息预期再降温，标普500续创纪录收盘新高",
-      "source": "CNBC / Investing.com",
-      "url": "https://www.cnbc.com/2026/08/12/stock-market-today-live-updates.html",
-      "note": "美国7月PPI环比持平、核心PPI+0.2%，批发端通胀降温，继前一日温和CPI后进一步压低'提前加息'风险（当前联邦基金利率仍3.50-3.75%，市场博弈的是主席Warsh 9月加不加息）；标普500盘中首破7800、录得约7799的收盘纪录高位，纳指+0.81%收26803、道指+0.1%收53840（思科Cisco财报限制道指涨幅）。科技/软件股扛旗。"
+      "title": "标普500高位回落收7785.76 三大股指齐跌但连三周收涨",
+      "source": "CNBC / Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/p-logs-third-consecutive-weekly-203827209.html",
+      "note": "周五自纪录高位小幅获利回吐，标普-0.2%收7785.76、纳指-0.3%收26729.16、道指-0.2%收53732.41，但均录得连续第三周上涨，PPI温和后加息担忧缓解仍是主基调。"
     },
     {
-      "title": "Workday传Silver Lake洽购，创十年来最大单日涨幅",
-      "source": "CNBC / Morningstar",
-      "url": "https://www.cnbc.com/2026/08/13/workday-skyrockets-25percent-before-trading-halted-on-report-of-silver-lake-takeover.html",
-      "note": "路透报道私募巨头Silver Lake正洽谈收购HR软件龙头Workday，盘中一度暴涨30%并触发波动性熔断，收涨约18%创2016年来最大单日涨幅、亦为有记录以来最大涨幅。叠加此前市场担忧'AI取代SaaS'压制估值，本次并购传闻+FedRAMP+AI指引上调三重催化，点燃整个企业软件板块。"
+      "title": "美国7月零售销售意外下滑0.6% 消费降温强化'加息风险下降'叙事",
+      "source": "Charles Schwab",
+      "url": "https://www.schwab.com/learn/story/stock-market-update-open",
+      "note": "本周数据梯队最后一环零售销售环比-0.6%超预期走弱，部分受油价与汽车销售拖累，叠加温和CPI/PPI，进一步压低主席Warsh 9月加息概率（当前联邦基金利率仍3.50-3.75%）。"
     },
     {
-      "title": "SaaS板块集体反攻：HubSpot财报超预期、JFrog/Figma加速，AI叙事从算力外溢至软件层",
-      "source": "Zacks / Yahoo Finance",
-      "url": "https://finance.yahoo.com/technology/ai/articles/jfrog-says-ai-software-boom-020404136.html",
-      "note": "HubSpot Q2营收9.117亿+20%、非GAAP EPS 3.26碾压预期、经营利润+44%，此前一周杀跌11%后强反弹+14%；JFrog Q2营收+29%、云收入+53%被多家上调目标价+10.6%；Figma连三季加速营收3.70亿+48%、NDR 136%+11%。DocuSign/GoDaddy/Rubrik同步走强，映射资金从纯算力向软件/安全/观测层轮动。"
+      "title": "Reddit纳入标普500指数 8月18日生效股价大涨约12%",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/reddit-stock-surges-14-landmark-182308020.html",
+      "note": "RDDT将于8/18盘前取代AvalonBay进入标普500，叠加Q2营收+61%至8.05亿美元、广告收入激增，被动配置资金预期点燃社交平台龙头。"
     },
     {
-      "title": "Sandisk AI闪存新技术+合作催化，近月从约998飙至1556美元",
-      "source": "Timothy Sykes",
-      "url": "https://www.timothysykes.com/news/sandisk-corporation-sndk-news-2026_08_13/",
-      "note": "存储龙头Sandisk受AI闪存新技术与合作消息带动+13.67%，7/29低点约998美元到8/13约1556美元的凌厉趋势行情，验证AI数据中心对高速存储（NAND/HBM链）的需求外溢，与SK海力士Q2营业利润+557%同源，存储景气延续。"
+      "title": "Nubank Q2净利润首破10亿美元 NU大涨约13%创五个月新高",
+      "source": "The Motley Fool",
+      "url": "https://www.fool.com/investing/2026/08/14/why-nu-holdings-stock-jumped-13-today/",
+      "note": "拉美数字银行龙头单季净利约11亿美元同比+49%、IFRS营收+50%至55.1亿、ROE约33%，EPS 0.22超预期，墨西哥扩张与AI效率成看点，同板块StoneCo却跌6%。"
     },
     {
-      "title": "A股8/14早盘成长风格占优：芯片+1.41%、AI+1.44%领涨，电力/医药回调",
-      "source": "综合行情数据",
+      "title": "稀土/关键矿产集体走强 MP Materials涨约8.6%",
+      "source": "24/7 Wall St.",
+      "url": "https://247wallst.com/investing/2026/08/14/rare-earth-stocks-soar-on-friday-mp-materials-up-8-usa-rare-earth-up-9-niocorp-up-3-whats-behind-the-jump/",
+      "note": "MP上半年营收+68%、NdPr产量创纪录，叠加美国关键矿产供应链自主主题（Section 232、Trump储备计划、中国出口管制）持续发酵，USA Rare Earth、NioCorp同步走强。"
+    },
+    {
+      "title": "NRG Energy涨约5.4% 市场重估其数据中心供电管线",
+      "source": "Quiver Quantitative",
+      "url": "https://www.quiverquant.com/news/NRG+Energy+gains+as+investors+revisit+its+data-center+power+pipeline+and+reaffirmed+2026+outlook",
+      "note": "在8月初业绩后杀跌中反弹，投资者重新聚焦新增发电装机、东部容量收益与数据中心长期供电现金流——AI算力→电力主线的又一读数。"
+    }
+  ],
+  "ashare_news": [
+    {
+      "title": "A股8/14成长风格占优 创业板+1.12%领涨 AI/半导体强势",
+      "source": "综合行情（akshare）",
       "url": "http://quote.cfi.cn/quote2072_002028.html",
-      "note": "创业板指+0.92%收3619、科创50+0.81%、深成指+0.52%，沪指微跌0.09%收3923，成长风格与海外软件/科技反攻同频；科创芯片ETF+1.41%、创业板AI ETF+1.44%、半导体ETF+1.29%领涨，电力ETF-1.78%、港股创新药-1.71%、恒生医药-1.38%回调，8月中报密集披露成资金分水岭。"
+      "note": "创业板指+1.12%收3626、深成指+0.45%、沪指基本持平收3927，创业板人工智能ETF+3.04%、科创芯片ETF+0.66%领涨，与海外AI景气同频。"
+    },
+    {
+      "title": "创新药/港股医药继续回调 恒生医药ETF-2.26% 港股创新药-2.57%",
+      "source": "综合行情（akshare）",
+      "url": "http://quote.cfi.cn/quote2072_002028.html",
+      "note": "前期领涨的医药板块获利了结，证券-1.27%、银行-0.75%防御板块同步走弱，资金向AI/半导体成长切换，8月中报密集披露成兑现度分水岭。"
+    },
+    {
+      "title": "亚太存储芯片股集体爆发 韩国KOSPI大涨2.41%",
+      "source": "OKX Orbit",
+      "url": "https://www.okx.com/es-la/orbit/insight/84613208301504",
+      "note": "SK海力士等存储芯片股受HBM/AI需求带动大涨，KOSPI+2.41%，read-through至A股半导体链，与美股Sandisk等存储走强形成全球共振。"
     }
   ],
   "gainer_intros": {
-    "WDAY": "Workday，HR/财务云软件龙头，传私募Silver Lake洽购触发盘中30%暴涨并熔断、收涨约18%创十年最大单日涨幅，叠加AI指引上调与FedRAMP利好点燃SaaS板块",
-    "HUBS": "HubSpot，营销/CRM云平台，Q2营收9.117亿+20%、非GAAP EPS 3.26大超预期、经营利润+44%，此前一周杀跌11%后强势反弹+14.5%",
-    "SNDK": "Sandisk，闪存/存储龙头，AI闪存新技术与合作消息催化，近月从约998飙至约1556美元，受益AI数据中心存储需求外溢+13.7%",
-    "FIG": "Figma，云端协作设计平台，Q2营收3.70亿+48%连三季加速、净收入留存率136%，AI功能变现强劲+11%",
-    "FROG": "JFrog，软件供应链/DevOps平台，Q2营收+29%、云收入+53%全面超预期，多家分析师上调目标价+10.6%",
-    "DOCU": "DocuSign，电子签名/合同管理龙头，随SaaS板块整体反攻与空头回补上涨+10.3%",
-    "GDDY": "GoDaddy，域名注册/建站与小微企业服务商，市场重估其强劲现金流与AI功能渗透，随软件基建板块走强+9.5%",
-    "RBRK": "Rubrik，数据安全/备份恢复龙头，AI Agent身份管控叙事叠加网络安全板块轮动，续涨+8.6%"
+    "AAOI": "Applied Optoelectronics，AI数据中心光模块/光收发器厂商，Q2营收创纪录点燃AI光互连叙事，近两周从94飙至150，涨约15.5%",
+    "RDDT": "Reddit，兴趣社区社交平台，因8/18纳入标普500指数叠加Q2营收+61%、广告收入激增大涨约12.6%",
+    "NU": "Nubank，拉美数字银行龙头，Q2净利首破10亿美元、ROE约33%创纪录，涨约9.3%",
+    "NBIS": "Nebius Group，阿姆斯特丹AI云基础设施新贵，Q2营收暴增454%、AI云+514%叠加10亿美元AI大单，延续暴涨后强势，涨约8.9%",
+    "CPRT": "Copart，全球最大线上事故车/二手车拍卖平台，稳健现金流与保险处置量支撑，涨约7.6%",
+    "SNDK": "Sandisk，闪存/NAND存储龙头，受HBM/AI数据中心存储需求外溢与存储涨价周期带动，涨约7.4%",
+    "CGNX": "Cognex，机器视觉与工业自动化龙头，制造业景气回暖与AI视觉检测需求驱动，涨约6.6%",
+    "AMD": "AMD，AI加速卡与CPU龙头，MI系列数据中心GPU需求与AI算力资本开支高企支撑，涨约6.5%",
+    "OSCR": "Oscar Health，科技驱动的美国健康险公司，Q2创纪录盈利+全年指引上调获重估、富国上调目标价至27美元，涨约6.4%",
+    "FPS": "Forgent Power Solutions，数据中心/电网用配电设备制造商，受AI数据中心供电需求与订单积压创纪录带动，涨约5.6%",
+    "MP": "MP Materials，美国稀土/NdPr磁材龙头，上半年营收+68%叠加关键矿产供应链自主主题发酵，涨约5.5%",
+    "NRG": "NRG Energy，美国综合电力与零售能源商，市场重估其数据中心供电管线与东部容量收益，涨约5.4%",
+    "ELAN": "Elanco Animal Health，全球动物保健龙头，宠物与畜牧用药需求叠加去杠杆进展，涨约5.2%",
+    "SKM": "SK Telecom，韩国电信龙头，随韩国存储芯片股大涨与KOSPI+2.41%的市场情绪走强，涨约4.9%"
   },
-  "amazon_commentary": "8/13美股在温和CPI+持平PPI双重利好、加息预期降温下，标普500续创纪录、科技软件股扛旗。Amazon截至最新约232美元，59-62位分析师共识评级仍为'强力买入'、无一给出卖出，平均目标价约322-353美元（区间250-400），隐含约20%-32%上行；近期Roth上调至325、Seeking Alpha将合理价值上修至350、24/7 Wall St.模型给353，华尔街对AWS加速的信任票延续。\n本轮催化虽集中在企业软件（Workday并购传闻、HubSpot/JFrog/Figma财报），但AI叙事从纯算力向软件/观测/安全层外溢，本质是AI应用渗透加深——这对AWS是需求侧的正向读数：Q2 AWS重回37%增速、单季capex高达542亿美元（+68%）、全年上修至约2200亿美元，供给端扩张正被真实需求接住。\n分歧仍在自由现金流：巨额capex令FCF出现约258亿美元负向摆动、市值一度跌破3万亿，估值博弈聚焦'capex侵蚀FCF能否被云增长兑现'。策略上以逢回调分批为主，盯后续capex节奏与AWS增速延续性，用软件/存储景气外溢作为AI需求持续验证。",
-  "siyuan_commentary": "思源电气8/14早盘约167.30元、微跌0.17%，开166.44、盘中高168.24低165.75，成交约1.44亿（早盘），市值约1309亿，PE(TTM)39.15、PB8.12、PS5.49、PEG0.64，年内高239低75、处中枢震荡区间。当日A股成长风格占优、芯片/AI领涨，但电力ETF-1.78%回调，思源相对抗跌、在电力板块弱势中显韧性。\n海外这一晚主线切向企业软件（Workday并购、HubSpot/JFrog财报），电力/能源直接催化偏淡，但'算力→电力'的中期逻辑未变：AI数据中心用电、并网、输变电的真实需求仍是思源特高压GIS、变压器、储能与出海业务的核心支撑。内有国网'十五五'超4万亿（约40%投资增量）托底，外有海外AI供电与电网投资溢价，双轮驱动逻辑清晰。8月中报窗口以海外订单、储能出海毛利与兑现度为锚——今日电力板块回调、成长资金短线偏向芯片/软件，思源逢回调分批、不追高，留意中报兑现度与板块轮动扰动。"
+  "amazon_commentary": "参照8/14收盘，AMZN约232美元一线，60位分析师共识评级仍为\"Strong Buy\"、无一给出卖出，均目标约322-333美元，隐含约20-40%上行空间；SeekingAlpha在Q2财报后将合理价值上修至350美元，BMO更给到380美元。核心逻辑仍是Q2营收(不变汇率)同比+20%至2006亿、AWS所处的AI算力需求端持续加速被真实订单接住。\n本周的市场主线值得玩味：一边是Reddit、Nubank这类应用/平台层的强劲基本面兑现，另一边是MP稀土、NRG/FPS供电设备这类\"AI基建外溢\"主题走强——两条线都指向AI渗透在向纵深扩散，对AWS而言均是需求侧的正向读数。分歧仍集中在capex侵蚀自由现金流：全年capex已上修至约2200亿、单季542亿(+68%)，FCF摆动放大。\n策略上，AMZN目前估值相对科技权重股并不算贵，AWS增速回37%叠加广告与零售利润率改善是支撑，逢回调分批、以AWS增速与capex节奏为锚，用本周软件/供电/存储景气的持续性作AI需求侧的交叉验证。",
+  "siyuan_commentary": "思源电气(002028)8/14收166.50元微跌0.64%，开166.44、盘中高168.24低164.30，成交约11.9亿元，总市值约1303亿元，PE(TTM)约38.96、PB约7.92、PS约5.46、PEG约0.63，年内高239低77处中枢震荡。当日A股成长风格占优、创业板与AI/半导体领涨，而电力ETF(-1.87%)整体回调，思源相对抗跌，显示资金黏性。\n点评：本周海外主线一边是软件/应用层(Reddit、Nubank)兑现，一边是稀土(MP)、供电设备(NRG、Forgent Power)等\"AI基建\"主题走强——尤其Forgent这类数据中心配电设备龙头因订单积压创纪录大涨，直接印证AI数据中心用电→并网→输变电的真实需求链条，正是思源特高压、GIS、变压器、储能出海的核心逻辑外部佐证。内有国网\"十五五\"超4万亿、约40%投资增量托底，外有海外AI供电与电网升级溢价，双轮驱动未变。8月中报窗口建议以海外订单、储能出海毛利兑现度为锚，逢回调分批、不追高，留意成长风格情绪波动带来的短线扰动。"
 }
