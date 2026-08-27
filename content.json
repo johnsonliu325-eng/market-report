@@ -1,79 +1,53 @@
 {
-  "generated_at": "2026-08-15 09:30 北京时间（周末版·美股参照8/14收盘）",
+  "generated_at": "2026-08-26 21:00 北京时间",
   "news": [
     {
-      "title": "标普500高位回落收7785.76 三大股指齐跌但连三周收涨",
-      "source": "CNBC / Yahoo Finance",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/p-logs-third-consecutive-weekly-203827209.html",
-      "note": "周五自纪录高位小幅获利回吐，标普-0.2%收7785.76、纳指-0.3%收26729.16、道指-0.2%收53732.41，但均录得连续第三周上涨，PPI温和后加息担忧缓解仍是主基调。"
+      "title": "美股静待英伟达财报，标普收平、道指小跌0.21%，通胀黏性仍是压制项",
+      "source": "CNBC",
+      "url": "https://www.cnbc.com/2026/08/25/stock-market-today-live-updates.html",
+      "note": "8/25标普收7675.70基本走平、纳指-0.08%收26130、道指-113点结束三连涨；市场屏息等英伟达财报定调AI资本开支主线，当前联邦基金利率仍3.50-3.75%，博弈的是9月加不加息。"
     },
     {
-      "title": "美国7月零售销售意外下滑0.6% 消费降温强化'加息风险下降'叙事",
-      "source": "Charles Schwab",
-      "url": "https://www.schwab.com/learn/story/stock-market-update-open",
-      "note": "本周数据梯队最后一环零售销售环比-0.6%超预期走弱，部分受油价与汽车销售拖累，叠加温和CPI/PPI，进一步压低主席Warsh 9月加息概率（当前联邦基金利率仍3.50-3.75%）。"
+      "title": "Semtech Q2营收创纪录3.42亿+33%，数据中心业务爆发，盘后跳涨约10%",
+      "source": "Investing.com",
+      "url": "https://www.investing.com/news/company-news/semtech-q227-slides-data-center-hits-record-shares-jump-9-93CH-4876005",
+      "note": "非GAAP EPS 0.71美元大超指引0.61，数据中心+LoRa双驱动创纪录，AI光互连与连接景气再获强验证，直接利好算力→电力/连接产业链。"
     },
     {
-      "title": "Reddit纳入标普500指数 8月18日生效股价大涨约12%",
+      "title": "Arista Q2营收30.4亿+37.7%、EPS 1.02超预期，AI网络订单强劲上修全年",
+      "source": "MarketBeat",
+      "url": "https://www.marketbeat.com/instant-alerts/price-arista-networks-nyse-anet-trading-56-higher-time-to-buy-2026-08-26/",
+      "note": "AI数据中心高性能网络需求延续，与Lumentum光模块、Semtech连接共同印证超大规模资本开支仍在加速，是AWS等云厂商需求侧的正向读数。"
+    },
+    {
+      "title": "INNIO登陆纳斯达克募资24.3亿美元，燃气发动机搭上AI供电热潮",
+      "source": "Reuters/Investing.com",
+      "url": "https://www.investing.com/news/stock-market-news/advent-adiabacked-gas-engine-maker-innio-raises-243-billionin-us-ipo-4725601",
+      "note": "分布式能源龙头以区间上限定价、上市首日大涨，资金追逐'为AI供电'标的，与思源等电力设备的中期逻辑同频——算力扩张倒逼供电与并网真实放量。"
+    },
+    {
+      "title": "Summit Therapeutics再获催化：合作方Akeso依沃西单抗III期胆管癌达主终点",
       "source": "Yahoo Finance",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/reddit-stock-surges-14-landmark-182308020.html",
-      "note": "RDDT将于8/18盘前取代AvalonBay进入标普500，叠加Q2营收+61%至8.05亿美元、广告收入激增，被动配置资金预期点燃社交平台龙头。"
+      "url": "https://finance.yahoo.com/healthcare/articles/summit-therapeutics-shares-rise-partner-123712903.html",
+      "note": "HARMONi-GI1达OS主终点叠加此前肺癌III期与FDA审评，创新药临床里程碑密集兑现；同期A股港股创新药医药ETF回暖，中外创新药共振。"
     },
     {
-      "title": "Nubank Q2净利润首破10亿美元 NU大涨约13%创五个月新高",
-      "source": "The Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/14/why-nu-holdings-stock-jumped-13-today/",
-      "note": "拉美数字银行龙头单季净利约11亿美元同比+49%、IFRS营收+50%至55.1亿、ROE约33%，EPS 0.22超预期，墨西哥扩张与AI效率成看点，同板块StoneCo却跌6%。"
-    },
-    {
-      "title": "稀土/关键矿产集体走强 MP Materials涨约8.6%",
-      "source": "24/7 Wall St.",
-      "url": "https://247wallst.com/investing/2026/08/14/rare-earth-stocks-soar-on-friday-mp-materials-up-8-usa-rare-earth-up-9-niocorp-up-3-whats-behind-the-jump/",
-      "note": "MP上半年营收+68%、NdPr产量创纪录，叠加美国关键矿产供应链自主主题（Section 232、Trump储备计划、中国出口管制）持续发酵，USA Rare Earth、NioCorp同步走强。"
-    },
-    {
-      "title": "NRG Energy涨约5.4% 市场重估其数据中心供电管线",
-      "source": "Quiver Quantitative",
-      "url": "https://www.quiverquant.com/news/NRG+Energy+gains+as+investors+revisit+its+data-center+power+pipeline+and+reaffirmed+2026+outlook",
-      "note": "在8月初业绩后杀跌中反弹，投资者重新聚焦新增发电装机、东部容量收益与数据中心长期供电现金流——AI算力→电力主线的又一读数。"
-    }
-  ],
-  "ashare_news": [
-    {
-      "title": "A股8/14成长风格占优 创业板+1.12%领涨 AI/半导体强势",
-      "source": "综合行情（akshare）",
-      "url": "http://quote.cfi.cn/quote2072_002028.html",
-      "note": "创业板指+1.12%收3626、深成指+0.45%、沪指基本持平收3927，创业板人工智能ETF+3.04%、科创芯片ETF+0.66%领涨，与海外AI景气同频。"
-    },
-    {
-      "title": "创新药/港股医药继续回调 恒生医药ETF-2.26% 港股创新药-2.57%",
-      "source": "综合行情（akshare）",
-      "url": "http://quote.cfi.cn/quote2072_002028.html",
-      "note": "前期领涨的医药板块获利了结，证券-1.27%、银行-0.75%防御板块同步走弱，资金向AI/半导体成长切换，8月中报密集披露成兑现度分水岭。"
-    },
-    {
-      "title": "亚太存储芯片股集体爆发 韩国KOSPI大涨2.41%",
-      "source": "OKX Orbit",
-      "url": "https://www.okx.com/es-la/orbit/insight/84613208301504",
-      "note": "SK海力士等存储芯片股受HBM/AI需求带动大涨，KOSPI+2.41%，read-through至A股半导体链，与美股Sandisk等存储走强形成全球共振。"
+      "title": "A股8/26全线走强：科创50+1.71%领涨、沪指收3912.52，AI芯片与港股证券活跃",
+      "source": "东方财富/新浪财经",
+      "url": "https://finance.sina.com.cn/",
+      "note": "沪深300+0.85%、深成指+0.69%、创业板+0.51%普涨，科创芯片+1.59%、光伏+1.55%、香港证券ETF+3.72%领涨，电力ETF+1.26%走强，成长与顺周期共振。"
     }
   ],
   "gainer_intros": {
-    "AAOI": "Applied Optoelectronics，AI数据中心光模块/光收发器厂商，Q2营收创纪录点燃AI光互连叙事，近两周从94飙至150，涨约15.5%",
-    "RDDT": "Reddit，兴趣社区社交平台，因8/18纳入标普500指数叠加Q2营收+61%、广告收入激增大涨约12.6%",
-    "NU": "Nubank，拉美数字银行龙头，Q2净利首破10亿美元、ROE约33%创纪录，涨约9.3%",
-    "NBIS": "Nebius Group，阿姆斯特丹AI云基础设施新贵，Q2营收暴增454%、AI云+514%叠加10亿美元AI大单，延续暴涨后强势，涨约8.9%",
-    "CPRT": "Copart，全球最大线上事故车/二手车拍卖平台，稳健现金流与保险处置量支撑，涨约7.6%",
-    "SNDK": "Sandisk，闪存/NAND存储龙头，受HBM/AI数据中心存储需求外溢与存储涨价周期带动，涨约7.4%",
-    "CGNX": "Cognex，机器视觉与工业自动化龙头，制造业景气回暖与AI视觉检测需求驱动，涨约6.6%",
-    "AMD": "AMD，AI加速卡与CPU龙头，MI系列数据中心GPU需求与AI算力资本开支高企支撑，涨约6.5%",
-    "OSCR": "Oscar Health，科技驱动的美国健康险公司，Q2创纪录盈利+全年指引上调获重估、富国上调目标价至27美元，涨约6.4%",
-    "FPS": "Forgent Power Solutions，数据中心/电网用配电设备制造商，受AI数据中心供电需求与订单积压创纪录带动，涨约5.6%",
-    "MP": "MP Materials，美国稀土/NdPr磁材龙头，上半年营收+68%叠加关键矿产供应链自主主题发酵，涨约5.5%",
-    "NRG": "NRG Energy，美国综合电力与零售能源商，市场重估其数据中心供电管线与东部容量收益，涨约5.4%",
-    "ELAN": "Elanco Animal Health，全球动物保健龙头，宠物与畜牧用药需求叠加去杠杆进展，涨约5.2%",
-    "SKM": "SK Telecom，韩国电信龙头，随韩国存储芯片股大涨与KOSPI+2.41%的市场情绪走强，涨约4.9%"
+    "SMTC": "Semtech，模拟/混合信号芯片与LoRa连接龙头，Q2营收创纪录3.42亿(+33%)、数据中心业务爆发，EPS大超指引，盘后跳涨约10%",
+    "TTMI": "TTM Technologies，北美最大PCB印制电路板制造商，Q2业绩超预期上修全年指引叠加CEO增持与EPIQ并购催化，重估AI/国防订单",
+    "BTSG": "BrightSpring Health，社区与居家医疗服务平台，获Zacks 1号评级、全年盈利预期上调近9%，逆势收涨7.2%",
+    "SMMT": "Summit Therapeutics，创新药企，核心产品依沃西单抗合作方Akeso III期胆管癌达OS主终点，临床里程碑再兑现",
+    "INIO": "INNIO Group，全球分布式能源与燃气发动机龙头，纳斯达克上市募资24.3亿美元，搭上'为AI供电'热潮",
+    "LITE": "Lumentum，AI数据中心光模块/激光器龙头，1.6T光模块放量、营收指引提前触及长期目标，AI光互连需求强劲",
+    "P": "Everpure，水处理与过滤解决方案商，随大盘与工业/数据中心用水主题走强，无重大单一催化",
+    "ANET": "Arista Networks，AI数据中心高性能网络交换龙头，Q2营收30.4亿(+37.7%)、EPS 1.02超预期并上修全年，AI订单强劲"
   },
-  "amazon_commentary": "参照8/14收盘，AMZN约232美元一线，60位分析师共识评级仍为\"Strong Buy\"、无一给出卖出，均目标约322-333美元，隐含约20-40%上行空间；SeekingAlpha在Q2财报后将合理价值上修至350美元，BMO更给到380美元。核心逻辑仍是Q2营收(不变汇率)同比+20%至2006亿、AWS所处的AI算力需求端持续加速被真实订单接住。\n本周的市场主线值得玩味：一边是Reddit、Nubank这类应用/平台层的强劲基本面兑现，另一边是MP稀土、NRG/FPS供电设备这类\"AI基建外溢\"主题走强——两条线都指向AI渗透在向纵深扩散，对AWS而言均是需求侧的正向读数。分歧仍集中在capex侵蚀自由现金流：全年capex已上修至约2200亿、单季542亿(+68%)，FCF摆动放大。\n策略上，AMZN目前估值相对科技权重股并不算贵，AWS增速回37%叠加广告与零售利润率改善是支撑，逢回调分批、以AWS增速与capex节奏为锚，用本周软件/供电/存储景气的持续性作AI需求侧的交叉验证。",
-  "siyuan_commentary": "思源电气(002028)8/14收166.50元微跌0.64%，开166.44、盘中高168.24低164.30，成交约11.9亿元，总市值约1303亿元，PE(TTM)约38.96、PB约7.92、PS约5.46、PEG约0.63，年内高239低77处中枢震荡。当日A股成长风格占优、创业板与AI/半导体领涨，而电力ETF(-1.87%)整体回调，思源相对抗跌，显示资金黏性。\n点评：本周海外主线一边是软件/应用层(Reddit、Nubank)兑现，一边是稀土(MP)、供电设备(NRG、Forgent Power)等\"AI基建\"主题走强——尤其Forgent这类数据中心配电设备龙头因订单积压创纪录大涨，直接印证AI数据中心用电→并网→输变电的真实需求链条，正是思源特高压、GIS、变压器、储能出海的核心逻辑外部佐证。内有国网\"十五五\"超4万亿、约40%投资增量托底，外有海外AI供电与电网升级溢价，双轮驱动未变。8月中报窗口建议以海外订单、储能出海毛利兑现度为锚，逢回调分批、不追高，留意成长风格情绪波动带来的短线扰动。"
+  "amazon_commentary": "今晚美股主线仍是AI算力→连接→电力的产业链验证：Semtech数据中心业务创纪录、Arista AI网络营收+37.7%、Lumentum光模块提前触及长期目标、INNIO带着'为AI供电'逻辑高调上市。这一整串读数对Amazon都是需求侧的正向信号——AWS所处的AI算力需求端并未降温，反而在超大规模资本开支的支撑下继续加速。TD Cowen近期更测算AWS到2027年有望做到2220亿美元，比市场共识高出约11%，锚定的正是约2000亿美元的AI基础设施投入。Rosenblatt亦看AWS 2026年底增速回到45%，高于街上38%的预期。\n\n估值端，60位分析师共识仍为Strong Buy、无卖出，平均目标价约322-333美元，隐含约20-28%上行，最高看到400美元(BMO 380、Rosenblatt买入335)。核心逻辑没变：AWS增速修复、广告与零售利润率改善，撑起盈利弹性；分歧仍集中在capex侵蚀自由现金流的节奏。本周英伟达财报是AI资本开支主线的定调时点，其指引会外溢到对AWS需求的定价。\n\n策略上，估值并不算贵，AWS重回高增叠加软件(Semtech/Arista景气)、连接、供电的多重外溢验证，构成需求侧的交叉印证。逢回调分批，以AWS增速与capex节奏为锚，用今晚这批AI基建/连接股的兑现度作为需求端的持续读数。",
+  "siyuan_commentary": "思源电气8/26收170.49元、微涨0.52%，开169.58、盘中最高172.61低166.70，成交约10.3亿元，换手0.99%，总市值约1334亿元；PE(TTM)约40.17、PB约8.11、PS约5.6、PEG约0.65，年内高239.12低82.43，仍处中枢震荡。当日电力ETF+1.26%走强，思源随电力设备板块同步回暖，成交温和显资金黏性尚在。\n\n点评：今晚海外这条'算力→电力'主线再度被强验证——INNIO带着分布式供电逻辑募资24亿上市、Semtech数据中心业务创纪录、Arista AI网络订单强劲，共同指向AI数据中心对供电、并网、输变电的真实拉动，而思源的特高压GIS、变压器与储能出海正是A股最直接的对标。外有海外AI供电与电网升级溢价，内有国网'十五五'超4万亿、约40%投资增量托底，构成双轮驱动。8月中报窗口收官，应以海外订单、储能出海毛利与兑现度为锚——PEG约0.65在成长股中并不贵，但PB逾8已price-in较高预期，逢回调分批、不追高，留意成长风格的情绪波动与英伟达财报对全球AI资本开支预期的扰动。"
 }
