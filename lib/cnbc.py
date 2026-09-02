@@ -1,6 +1,17 @@
 #!/usr/bin/env python3
 """CNBC quote engine — 免费、不限流、返回干净 JSON。所有盯盘脚本共用。"""
-import urllib.request, urllib.parse, json, time
+import urllib.request, urllib.parse, json, time, ssl
+
+
+def _ssl_ctx():
+    try:
+        import certifi
+        return ssl.create_default_context(cafile=certifi.where())
+    except Exception:
+        return ssl.create_default_context()
+
+
+_CTX = _ssl_ctx()
 
 UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36"
 BASE = "https://quote.cnbc.com/quote-html-webservice/restQuote/symbolType/symbol"
@@ -11,7 +22,7 @@ def _get(url, retries=3):
     for i in range(retries):
         try:
             req = urllib.request.Request(url, headers={"User-Agent": UA})
-            with urllib.request.urlopen(req, timeout=15) as r:
+            with urllib.request.urlopen(req, timeout=15, context=_CTX) as r:
                 return json.loads(r.read().decode("utf-8", "ignore"))
         except Exception as e:
             last = e
@@ -28,7 +39,7 @@ def _yget(url, retries=3):
     for i in range(retries):
         try:
             req = urllib.request.Request(url, headers={"User-Agent": YUA})
-            with urllib.request.urlopen(req, timeout=15) as r:
+            with urllib.request.urlopen(req, timeout=15, context=_CTX) as r:
                 return json.loads(r.read().decode("utf-8", "ignore"))
         except Exception as e:
             last = e
